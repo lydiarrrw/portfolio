@@ -1,31 +1,393 @@
-h1 {
-  font-family: 'Permanent Marker', cursive;
-  color: whitesmoke;
-}
-  
-body {
-  background-color: rgb(53, 51, 51);
-  font-family: 'Permanent Marker', cursive;
-  color: whitesmoke;
-  display: flex;
-  justify-content: center;
+* {
+  box-sizing: border-box;
 }
 
-section {
+main {
+  background-color:white;
+}
+
+button, #animationsControl{
+  background-color:#373b38;
+  color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  border: none;
+  margin: 5px;
+}
+
+#headerimg {
+  background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./assets/pexels-fwstudio-164005.jpg");
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+nav {
+visibility: hidden;
+}
+
+a {
+  color: #373b38;
+  font-family: 'Poppins', sans-serif;
+}
+
+#headerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
   text-align: center;
 }
 
-.icon {
+
+h1 {
+  font-family: 'Mulish', sans-serif;
+  color:  whitesmoke;
+  font-size: 5em;
+  margin: 0px;
+}
+
+hr {
+  background-color: whitesmoke;
+  margin: 2px;
+  width: 70%;
+}
+
+#roles {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vw;
+  color: white;
+  margin: 0px;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  color: #616100d0;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  color:  #373b38;
+  margin: 10px 0 8px 0;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  color: #373b38;
+  margin-top: 0px;
+}
+
+small {
+  font-size: 8px;
+}
+
+.lydia {
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+}
+
+#aboutMeSection {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-top:10%;
+}
+
+#recently {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: whitesmoke;
-  height: 40px;
-  width: 40px;
-  margin: 5px;
-  border-radius: 10px;
+  padding: 5%;
 }
+
+/* .recently-been {
+ display: flex;
+ flex-direction: row;
+} */
+
+.podcasts {
+  height:70%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.single-podcast {
+  padding: 1px;
+}
+
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  padding:0% 10%;
+}
+
+.parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./assets/pexels-fwstudio-164005.jpg");
+  min-height: 100px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#skills {
+  padding: 5%;
+}
+
+#skillsList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#listOfSkills {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+
+#singleSkill {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  font-family: 'Poppins', sans-serif;
+  color: #373b38;
+  align-items: center;
+  padding: 10px;
+}
+
+#skillsList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75%;
+  padding: 0px;
+  margin: 0px;
+}
+
+label {
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  color: #373b38;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.project-desc, .project-desc-mob, .project-desc-rev {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.project-cards {
+  box-shadow: 2px 2px 2px 2px #a7a79f3b;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 100%;
+  display: flex;
+ 
+}
+
+.project-link-logo {
+ width: 35px;
+ height: 35px;
+ padding: 5px;
+ align-items: center;
+}
+
+.project-link-align {
+  display: flex;
+  flex-direction: column;
+}
+
+#project-link-text {
+  display: flex;
+  align-items: center;
+}
+
+footer, .footer-text {
+  display: flex;
+  justify-content: center;
+  color: #373b38;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.courses {
+  color: #373b38;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* -----------DESKTOP -------------------*/
+
+@media only screen and (min-width: 600px) {
+  #headerimg {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+  }
+  
+
+  #navmenu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 40%;
+    padding-right: 8px;
+  }
+
+    nav, .menu-item {
+    
+    color: whitesmoke;
+    margin: 0px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    visibility: visible;
+    text-decoration: none;
+    padding:3px;
+  }
+
+
+  #aboutMeSection {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    align-items: center;
+  
+  }
+
+  .aboutMeText {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 0;
+  }
+  
+  #singleSkill {
+    display: flex;
+    flex-direction: column;
+    color: #373b38;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .contactForm { 
+    flex-direction: row;
+  }
+
+
+  a, .project-link {
+    height: auto;
+    width: 40%;
+  }
+
+
+  a, .project-image {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    
+  }
+
+   .single-project {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .single-project-rev {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+   .project-image {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    padding: 5px 10px 5px 10px;
+  }
+  
+  .project-image-rev {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    padding: 5px 30px 5px 10px;
+  }
+  
+  .projects-mobile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-image-mob {
+    width: 50%;
+    padding-left: 0px;
+    
+  }
+  .project-desc-mob {
+    width: 50%;
+    padding: 5px 0 0 5px;
+  }
+
+  .project-desc, .project-desc-mob {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .project-desc-rev {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+  }
+  
+
+  #project-link-text {
+    color: #373b38;
+    text-align: left;
+  
+  }
+  
+  .project-cards {
+    margin: 40px;
+  }
+
+
+
+}
+
+@media (prefers-reduced-motion) {
+  .animation {
+    animation-name: dissolve;
+  }
+}
+

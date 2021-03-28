@@ -4,40 +4,286 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Lydia Wood - Software Engineer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" href="assets/Lydia.jpg" sizes="16x16" type="image/jpg"> 
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@900&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <main>
-    <section>
-      <h1>Hello, I'm Lydia</h1>
-      <p> This page is under construction. <br> Until it's ready, you can find me here:
-      </p>
-      <div>
-        <div class="icon">
-          <a href="https://github.com/lydiarrrw" target="_blank">
-            <img src="assets/032-github.png" alt="github logo" height="30px">
-          </a>
-        </div>
-        <div class="icon">
-          <a href="https://www.linkedin.com/in/lydiaawood/" target="_blank">
-            <img src="assets/052-linkedin.png" alt="linked in logo" height="30px">
-          </a>
-        </div>
 
+  <main>
+    <!-- Landing -->
+    <section id="headerimg">
+      <nav>
+        <button id="animationsControl">Pause animations</button>
+        <ul id="navmenu">
+          <li><a href="#aboutMeSection" class="menu-item">About me</a></li>
+          <li><a href="#skills" class="menu-item">Skills</a></li>
+          <li><a href="#projects" class="menu-item">Projects</a></li>
+          <li><a href="#contact" class="menu-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="headerText">
+        <h1>LYDIA WOOD</h1>
+        <hr>
+        <p id="roles"></p>
+        <!-- PODCAST LOVER ACCESSIBILITY ENTHUSIAST CRAFTER-->
       </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <article id="listOfSkills">
+        <ul id="skillsList">
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-babel-50.png" alt="babel icon">Babel</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-css3-50.png" alt="CSS icon">CSS</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-github-50.png" alt="">GitHub</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-heroku-50.png" alt="Heroku icon">Heroku</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-html-5-50.png" alt="HTML icon">HTML</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-javascript-50.png" alt="javascript icon">JavaScript
+          </li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-node-js-50.png" alt="node.js icon">node.js</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-npm-50.png" alt="npm icon">npm</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-postgresql-50.png" alt="Postgresql icon">PostgreSQL
+          </li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-python-50.png" alt="">Python</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-react-50.png" alt="react icon">React.js</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-sass-50.png" alt="sass icon">SASS</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-web-accessibility-50.png"
+              alt="accessibility icon">Accessibility</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-webpack-50.png" alt="Webpack icon">webpack</li>
+          <li id="singleSkill"><img src="assets/skills-icons/icons8-visual-studio-logo-50.png" alt="VS code icon">Visual
+            Studio Code</li>
+          <!-- <li id="singleSkill"><img src="assets/skills-icons/flask.png" alt="flask icon">Flask</li> -->
+        </ul>
+      </article>
+    </section>
+
+
+    <section class="parallax"></section>
+
+    <!-- About Me -->
+    <section id="aboutMeSection">
+      <article class="aboutMeText">
+        <h2>About me</h2>
+        <p>I love to work in teams whose aim is to drive change and help improve people’s lives. My previous roles have
+          provided me with an opportunity to work on an international scale, with a diverse range of people, equipping
+          me with the skills to be able to understand audiences and empathise with them. I decided to become a developer
+          to ensure that I’m continually challenging myself whilst having a wide-reaching positive impact through the
+          work I do. I’m looking for a Junior Developer role in a team that is passionate about accessibility in their
+          work, where I can grow, learn and share knowledge.
+        </p>
+        <a href="#contact">Find out how to get in touch</a>
+        </div>
+      </article>
+      <img src="./assets/Lydia.jpg" alt="Picture of Lydia" class="lydia">
 
 
     </section>
 
+    <section class="parallax"></section>
 
-    <!-- <footer>
-<small>Created by Lydia Wood 2021</small>
-    </footer> -->
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="upper-projects">
+        <article class="project-cards">
+          <div class="single-project">
+            <a href="http://stepladderlw.herokuapp.com/" class="project-image">
+              <img class="project-image" src="./assets/stepladder.png" alt="Screenshot of Stepladder site">
+            </a>
+            <div class="project-desc">
+              <h3>Stepladder</h3>
+              <p>
+                A week long group project where we created the back, and front-end of a glassdoor style website. We
+                created the backend as a team and split the other responsibilities. Some of my main tasks included
+                working on functionality to post a job to the site, using draft.js to allow users to edit how their
+                posting looks, and on a rating system for each of the companies using react-rating. We also worked on
+                some testing for the site.
+              </p>
+              <p>
+                Technologies used: React.js, MongoDB, Express, Mongoose
+              </p>
+              <div class="project-link-align">
+                <a href="https://stepladderlw.herokuapp.com/" id="project-link-text">
+                  <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
+                  See it live
+                </a>
+                <a href="https://github.com/lydiarrrw/project-3" id="project-link-text">
+                  <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
+                  See my approach
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="project-cards">
+          <div class="single-project-rev">
+            <a href="https://lydiarrrw.github.io/project-2/" class="project-image-rev">
+              <img class="project-image" src="./assets/Rexflix.png" alt="Screenshot of REXFLIX site">
+            </a>
+            <div class="project-desc-rev">
+              <h3>REXFLIX</h3>
+              <p>
+                A 48 hour paired programming project utilising The Movie Database API to create a single page app movie
+                recommendations site. We used VSCode Liveshare to programme simultaneously, communicating via Zoom. We
+                worked on all aspects of the site, assisting each other.
+              </p>
+              <p>
+                Technologies used: React.js, The Movie Database API
+              </p>
+              <div class="project-link-align">
+                <a href="https://lydiarrrw.github.io/project-2/" id="project-link-text">
+                  <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
+                  See it live
+                </a>
+                <div>
+                  <a href="https://github.com/lydiarrrw/project-2" id="project-link-text">
+                    <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
+                    See my approach
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="projects-mobile">
+        <article class="project-cards">
+          <div class="single-project-rev">
+            <a href="http://dreamlandlw.herokuapp.com/" class="project-image-mob">
+              <img class="project-image" src="./assets/dreamland.png" alt="Screenshot of Dreamland site">
+            </a>
+            <div class="project-desc-mob">
+              <h3>Dreamland</h3>
+              <p>
+                This was a week-long group project building a full-stack website, creating a mobile first design for
+                music festival attendees.
+              </p>
+              <p>
+                Technologies used: React.js, Python, Flask, PostgreSQL, pytest
+              </p>
+              <div class="project-link-align">
+                <a href="https://dreamlandlw.herokuapp.com/" id="project-link-text">
+                  <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
+                  See it live
+                </a>
+                <a href="https://dreamlandlw.herokuapp.com/" id="project-link-text">
+                  <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
+                  My approach
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+
+        <article class="project-cards">
+          <div class="single-project-rev" class="project-image-mob">
+            <a href="https://lydiarrrw.github.io/project-1/" class="project-image-mob">
+              <img class="project-image" src="./assets/roshman.png" alt="Screenshot of ROSHMAN site">
+            </a>
+            <div class="project-desc-mob">
+              <h3>ROSHMAN</h3>
+              <p>
+                A week long solo project where I created a pac man style game, using JavaScript and CSS to get pacman
+                and the ghosts to move around the grid.
+              </p>
+              <p>
+                Technologies used: HTML, CSS, JavaScript.
+              </p>
+              <div class="project-link-align">
+                <a href="https://lydiarrrw.github.io/project-1/" target="blank" id="project-link-text">
+                  <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
+                  See it live
+                </a>
+                <a href="https://github.com/lydiarrrw/project-1" target="blank" id="project-link-text">
+                  <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
+                  My approach
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="parallax"></section>
+    <!-- Recently -->
+    <section id="recently">
+      <h2>Recently I've been...</h2>
+      <div class>
+        <article>
+          <h3>Learning:</h3>
+          <ul>
+            <li class="courses">Software Engineering Immersive, General Assembly (London) - Remote</li>
+            <li class="courses">Web Accessibility by Google, Udacity</li>
+            <li class="courses">Introduction to UX and Accessible Design, FutureLearn</li>
+          </ul>
+        </article>
+        
+        <article>
+          <h3>Listening to:</h3>
+          <ul class="podcasts">
+            <li class="single-podcast">
+              <iframe src="https://open.spotify.com/embed-podcast/show/7LkOsEaOcPt4BwewJXNjVW" width="90%" height="232"
+                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </li>
+            <li class="single-podcast">
+              <iframe src="https://open.spotify.com/embed-podcast/show/4FYpq3lSeQMAhqNI81O0Cn" width="90%" height="232"
+                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </li>
+            <li class="single-podcast">
+              <iframe src="https://open.spotify.com/embed-podcast/show/5c26B28vZMN8PG0Nppmn5G" width="90%" height="232"
+                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </li>
+            <li class="single-podcast">
+              <iframe src="https://open.spotify.com/embed-podcast/episode/0q2MBW2TvwPD2hHJT9z60l" width="90%"
+                height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </li>
+          </ul>
+
+        </article>
+      </div>
+    </section>
+
+    <section class="parallax"></section>
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Get in touch</h2>
+      <div class="skillsList">
+        <a href="https://www.linkedin.com/in/lydiaawood/" target="blank" id="project-link-text">
+          <img src="assets/skills-icons/icons8-linkedin-50.png" alt="linkedin logo">
+          Connect with me
+        </a>
+        <a href="https://github.com/lydiarrrw" target="blank" id="project-link-text">
+          <img src="assets/skills-icons/icons8-github-50.png" alt="github logo">
+          See my projects
+        </a>
+        <a href="mailto:lydiaawood@googlemail.com" target="blank" id="project-link-text">
+          <img src="assets/skills-icons/icons8-send-email-50.png" alt="email icon">
+          lydiaawood@googlemail.com
+        </a>
+      </div>
+
+    </section>
+    <section class="parallax"></section>
+    <footer>
+      <small>Created by Lydia Wood 2021
+        <br/>
+        <br/>
+      Icons courtesy of <a href="https://icons8.com/" class="footer-text">icons8.com</a>
+      Image by Susan Cipriano from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6088490" class="footer-text">Pixabay</a></small>
+    </footer>
   </main>
+  <script src="index.js"></script>
 </body>
 
 </html>
