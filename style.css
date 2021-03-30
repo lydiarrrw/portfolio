@@ -6,6 +6,21 @@ main {
   background-color:white;
 }
 
+.skip-to-content-link {
+  background: white;
+  height: 30px;
+  left: 5%;
+  width: 150px;
+  padding: 1px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
 button, #animationsControl{
   background-color:#373b38;
   color: whitesmoke;
@@ -40,6 +55,7 @@ a {
   align-items: center;
   height: 100vh;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 
@@ -47,7 +63,8 @@ h1 {
   font-family: 'Mulish', sans-serif;
   color:  whitesmoke;
   font-size: 5em;
-  margin: 0px;
+  margin: 2px;
+  
 }
 
 hr {
@@ -107,11 +124,6 @@ small {
   flex-direction: column;
   padding: 5%;
 }
-
-/* .recently-been {
- display: flex;
- flex-direction: row;
-} */
 
 .podcasts {
   height:70%;
@@ -189,6 +201,12 @@ label {
   padding: 5%;
 }
 
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -225,10 +243,19 @@ label {
   flex-direction: column;
 }
 
+
 #project-link-text {
   display: flex;
   align-items: center;
+  padding: 10px;
 }
+
+#project-link-text-rev {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
 
 footer, .footer-text {
   display: flex;
@@ -269,7 +296,7 @@ footer, .footer-text {
     margin: 0px;
     font-size: 1em;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     visibility: visible;
     text-decoration: none;
     padding:3px;
@@ -381,7 +408,21 @@ footer, .footer-text {
     margin: 40px;
   }
 
+  #project-link-text-rev {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 10px;
+  }
+  
+  #contact {
+    flex-direction: row;
+  }
 
+  .contact-section {
+    width: 50%;
+  }
+  
 
 }
 

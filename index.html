@@ -17,8 +17,9 @@
   <main>
     <!-- Landing -->
     <section id="headerimg">
+      <a class="skip-to-content-link" href="#skills">Skip to content</a>
       <nav>
-        <button id="animationsControl">Pause animations</button>
+        <!-- <button id="animationsControl">Pause animations</button> -->
         <ul id="navmenu">
           <li><a href="#aboutMeSection" class="menu-item">About me</a></li>
           <li><a href="#skills" class="menu-item">Skills</a></li>
@@ -30,7 +31,6 @@
         <h1>LYDIA WOOD</h1>
         <hr>
         <p id="roles"></p>
-        <!-- PODCAST LOVER ACCESSIBILITY ENTHUSIAST CRAFTER-->
       </div>
     </section>
 
@@ -58,7 +58,7 @@
           <li id="singleSkill"><img src="assets/skills-icons/icons8-webpack-50.png" alt="Webpack icon">webpack</li>
           <li id="singleSkill"><img src="assets/skills-icons/icons8-visual-studio-logo-50.png" alt="VS code icon">Visual
             Studio Code</li>
-          <!-- <li id="singleSkill"><img src="assets/skills-icons/flask.png" alt="flask icon">Flask</li> -->
+          <li id="singleSkill"><img src="assets/skills-icons/flask.png" alt="flask icon" width="50px" height="50px">Flask</li>
         </ul>
       </article>
     </section>
@@ -77,7 +77,7 @@
           work I do. I’m looking for a Junior Developer role in a team that is passionate about accessibility in their
           work, where I can grow, learn and share knowledge.
         </p>
-        <a href="#contact">Find out how to get in touch</a>
+        <a href="#contact">Contact me</a>
         </div>
       </article>
       <img src="./assets/Lydia.jpg" alt="Picture of Lydia" class="lydia">
@@ -139,12 +139,12 @@
                 Technologies used: React.js, The Movie Database API
               </p>
               <div class="project-link-align">
-                <a href="https://lydiarrrw.github.io/project-2/" id="project-link-text">
+                <a href="https://lydiarrrw.github.io/project-2/" id="project-link-text-rev">
                   <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
                   See it live
                 </a>
                 <div>
-                  <a href="https://github.com/lydiarrrw/project-2" id="project-link-text">
+                  <a href="https://github.com/lydiarrrw/project-2" id="project-link-text-rev">
                     <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
                     See my approach
                   </a>
@@ -174,7 +174,7 @@
                   <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
                   See it live
                 </a>
-                <a href="https://dreamlandlw.herokuapp.com/" id="project-link-text">
+                <a href="https://github.com/lydiarrrw/project-3" id="project-link-text">
                   <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
                   My approach
                 </a>
@@ -257,8 +257,9 @@
     <section class="parallax"></section>
     <!-- Contact -->
     <section id="contact">
-      <h2>Get in touch</h2>
-      <div class="skillsList">
+      
+      <article class="contact-section">
+        <h2>Get in touch</h2>
         <a href="https://www.linkedin.com/in/lydiaawood/" target="blank" id="project-link-text">
           <img src="assets/skills-icons/icons8-linkedin-50.png" alt="linkedin logo">
           Connect with me
@@ -271,16 +272,23 @@
           <img src="assets/skills-icons/icons8-send-email-50.png" alt="email icon">
           lydiaawood@googlemail.com
         </a>
-      </div>
+      </article>
+
+      <article class="contact-section">
+        <h2>About this site</h2>
+        <p>
+          I want this website to be accessible to everyone. If it isn't, then email me and let me know so I can fix it!
+        </p>
+      </article>
+
 
     </section>
     <section class="parallax"></section>
     <footer>
       <small>Created by Lydia Wood 2021
         <br/>
-        <br/>
-      Icons courtesy of <a href="https://icons8.com/" class="footer-text">icons8.com</a>
-      Image by Susan Cipriano from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6088490" class="footer-text">Pixabay</a></small>
+        
+      <small>Images from Pexels and Pixabay. Icons from icon8.com</small>
     </footer>
   </main>
   <script src="index.js"></script>

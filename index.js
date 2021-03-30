@@ -4,7 +4,9 @@ document.getElementById('animationsControl')
 
 
 let i = 0
-const title = 'SOFTWARE ENGINEER | CARPENTER OF CODE'
+const title = 'SOFTWARE ENGINEER' 
+
+//| CARPENTER OF CODE' PODCAST LOVER ACCESSIBILITY ENTHUSIAST CRAFTER
 const speed = 70
 
 function typeTitle() {
