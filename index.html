@@ -8,25 +8,26 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="icon" href="assets/Lydia.jpg" sizes="16x16" type="image/jpg"> 
+  <link rel="icon" href="assets/Lydia.jpg" sizes="16x16" type="image/jpg">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@900&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <main>
+    <a class="skip-to-content-link" href="#skills">Skip to content</a>
+    <nav>
+      <!-- <button id="animationsControl">Pause animations</button> -->
+      <ul id="navmenu">
+        <li><a href="#aboutMeSection" class="menu-item">About me</a></li>
+        <li><a href="#skills" class="menu-item">Skills</a></li>
+        <li><a href="#projects" class="menu-item">Projects</a></li>
+        <li><a href="#contact" class="menu-item">Contact</a></li>
+      </ul>
+    </nav>
     <!-- Landing -->
     <section id="headerimg">
-      <a class="skip-to-content-link" href="#skills">Skip to content</a>
-      <nav>
-        <!-- <button id="animationsControl">Pause animations</button> -->
-        <ul id="navmenu">
-          <li><a href="#aboutMeSection" class="menu-item">About me</a></li>
-          <li><a href="#skills" class="menu-item">Skills</a></li>
-          <li><a href="#projects" class="menu-item">Projects</a></li>
-          <li><a href="#contact" class="menu-item">Contact</a></li>
-        </ul>
-      </nav>
+
       <div id="headerText">
         <h1>LYDIA WOOD</h1>
         <hr>
@@ -58,7 +59,8 @@
           <li id="singleSkill"><img src="assets/skills-icons/icons8-webpack-50.png" alt="Webpack icon">webpack</li>
           <li id="singleSkill"><img src="assets/skills-icons/icons8-visual-studio-logo-50.png" alt="VS code icon">Visual
             Studio Code</li>
-          <li id="singleSkill"><img src="assets/skills-icons/flask.png" alt="flask icon" width="50px" height="50px">Flask</li>
+          <li id="singleSkill"><img src="assets/skills-icons/flask.png" alt="flask icon" width="50px"
+              height="50px">Flask</li>
         </ul>
       </article>
     </section>
@@ -85,90 +87,55 @@
 
     </section>
 
-    <section class="parallax"></section>
+ 
 
     <!-- Projects -->
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="upper-projects">
-        <article class="project-cards">
-          <div class="single-project">
-            <a href="http://stepladderlw.herokuapp.com/" class="project-image">
-              <img class="project-image" src="./assets/stepladder.png" alt="Screenshot of Stepladder site">
-            </a>
-            <div class="project-desc">
-              <h3>Stepladder</h3>
-              <p>
-                A week long group project where we created the back, and front-end of a glassdoor style website. We
-                created the backend as a team and split the other responsibilities. Some of my main tasks included
-                working on functionality to post a job to the site, using draft.js to allow users to edit how their
-                posting looks, and on a rating system for each of the companies using react-rating. We also worked on
-                some testing for the site.
-              </p>
-              <p>
-                Technologies used: React.js, MongoDB, Express, Mongoose
-              </p>
-              <div class="project-link-align">
-                <a href="https://stepladderlw.herokuapp.com/" id="project-link-text">
-                  <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
-                  See it live
-                </a>
-                <a href="https://github.com/lydiarrrw/project-3" id="project-link-text">
-                  <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
-                  See my approach
-                </a>
-              </div>
+      <h2 id="header-2">Projects</h2>
+
+      <article class="project-cards">
+        <div class="pin"></div>
+        <div class="single-project">
+          <a href="http://stepladderlw.herokuapp.com/" id="project-link-text">
+            <img class="project-image" src="./assets/stepladder.png" alt="Screenshot of Stepladder site">
+          </a>
+          <div class="project-desc">
+            <h3>Stepladder</h3>
+            <p>
+              A week long group project where we created the back, and front-end of a glassdoor style website. We
+              created the backend as a team and split the other responsibilities. Some of my main tasks included
+              working on functionality to post a job to the site, using draft.js to allow users to edit how their
+              posting looks, and on a rating system for each of the companies using react-rating. We also worked on
+              some testing for the site.
+            </p>
+            <p>
+              Technologies used: React.js, MongoDB, Express, Mongoose
+            </p>
+            <div class="project-link-align">
+              <a href="https://stepladderlw.herokuapp.com/" id="project-link-text">
+                <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
+                See it live
+              </a>
+              <a href="https://github.com/lydiarrrw/project-3" id="project-link-text">
+                <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
+                See my approach
+              </a>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
 
-        <article class="project-cards">
-          <div class="single-project-rev">
-            <a href="https://lydiarrrw.github.io/project-2/" class="project-image-rev">
-              <img class="project-image" src="./assets/Rexflix.png" alt="Screenshot of REXFLIX site">
-            </a>
-            <div class="project-desc-rev">
-              <h3>REXFLIX</h3>
-              <p>
-                A 48 hour paired programming project utilising The Movie Database API to create a single page app movie
-                recommendations site. We used VSCode Liveshare to programme simultaneously, communicating via Zoom. We
-                worked on all aspects of the site, assisting each other.
-              </p>
-              <p>
-                Technologies used: React.js, The Movie Database API
-              </p>
-              <div class="project-link-align">
-                <a href="https://lydiarrrw.github.io/project-2/" id="project-link-text-rev">
-                  <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
-                  See it live
-                </a>
-                <div>
-                  <a href="https://github.com/lydiarrrw/project-2" id="project-link-text-rev">
-                    <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
-                    See my approach
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
+
       <div class="projects-mobile">
+
         <article class="project-cards">
+          <div class="pin"></div>
           <div class="single-project-rev">
-            <a href="http://dreamlandlw.herokuapp.com/" class="project-image-mob">
-              <img class="project-image" src="./assets/dreamland.png" alt="Screenshot of Dreamland site">
-            </a>
-            <div class="project-desc-mob">
-              <h3>Dreamland</h3>
-              <p>
-                This was a week-long group project building a full-stack website, creating a mobile first design for
-                music festival attendees.
-              </p>
-              <p>
-                Technologies used: React.js, Python, Flask, PostgreSQL, pytest
-              </p>
+            <div class="mob-card">
+              <a href="http://dreamlandlw.herokuapp.com/" class="project-image-mob">
+                <img class="project-image" src="./assets/dreamland.png" alt="Screenshot of Dreamland site">
+              </a>
               <div class="project-link-align">
                 <a href="https://dreamlandlw.herokuapp.com/" id="project-link-text">
                   <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
@@ -180,25 +147,26 @@
                 </a>
               </div>
             </div>
-          </div>
+            <div class="project-desc-mob">
+              <h3>Dreamland</h3>
+              <p>
+                This was a week-long group project building a full-stack website, creating a mobile first design for
+                music festival attendees.
+              </p>
+              <p>
+                Technologies used: React.js, Python, Flask, PostgreSQL, pytest
+              </p>
+            </div>
         </article>
 
 
-
-        <article class="project-cards">
-          <div class="single-project-rev" class="project-image-mob">
-            <a href="https://lydiarrrw.github.io/project-1/" class="project-image-mob">
-              <img class="project-image" src="./assets/roshman.png" alt="Screenshot of ROSHMAN site">
-            </a>
-            <div class="project-desc-mob">
-              <h3>ROSHMAN</h3>
-              <p>
-                A week long solo project where I created a pac man style game, using JavaScript and CSS to get pacman
-                and the ghosts to move around the grid.
-              </p>
-              <p>
-                Technologies used: HTML, CSS, JavaScript.
-              </p>
+        <article class="project-cards-rev">
+          <div class="pin"></div>
+          <div class="single-project-rev">
+            <div class="mob-card">
+              <a href="https://lydiarrrw.github.io/project-1/" class="project-image-mob">
+                <img class="project-image" src="./assets/roshman.png" alt="Screenshot of ROSHMAN site">
+              </a>
               <div class="project-link-align">
                 <a href="https://lydiarrrw.github.io/project-1/" target="blank" id="project-link-text">
                   <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
@@ -210,12 +178,55 @@
                 </a>
               </div>
             </div>
-          </div>
+            <div class="project-desc-mob">
+              <h3>ROSHMAN</h3>
+              <p>
+                A week long solo project where I created a pac man style game, using JavaScript and CSS to get pacman
+                and the ghosts to move around the grid.
+              </p>
+              <p>
+                Technologies used: HTML, CSS, JavaScript.
+              </p>
+            </div>
         </article>
+      </div>
+
+
+      <article class="project-cards-rev">
+        <div class="pin"></div>
+        <div class="single-project">
+
+          <a href="https://lydiarrrw.github.io/project-2/" class="project-image">
+            <img class="project-image" src="./assets/Rexflix.png" alt="Screenshot of REXFLIX site">
+          </a>
+          <div class="project-desc">
+            <h3>REXFLIX</h3>
+            <p>
+              A 48 hour paired programming project utilising The Movie Database API to create a single page app movie
+              recommendations site. We used VSCode Liveshare to programme simultaneously, communicating via Zoom. We
+              worked on all aspects of the site, assisting each other.
+            </p>
+            <p>
+              Technologies used: React.js, The Movie Database API
+            </p>
+            <div class="project-link-align">
+              <a href="https://lydiarrrw.github.io/project-2/" id="project-link-text">
+                <img src="assets/skills-icons/icons8-website-50.png" alt="website logo" class="project-link-logo">
+                See it live
+              </a>
+              <div>
+                <a href="https://github.com/lydiarrrw/project-2" id="project-link-text">
+                  <img src="assets/skills-icons/icons8-github-50.png" alt="github logo" class="project-link-logo">
+                  See my approach
+                </a>
+              </div>
+            </div>
+
+
+      </article>
       </div>
     </section>
 
-    <section class="parallax"></section>
     <!-- Recently -->
     <section id="recently">
       <h2>Recently I've been...</h2>
@@ -228,7 +239,7 @@
             <li class="courses">Introduction to UX and Accessible Design, FutureLearn</li>
           </ul>
         </article>
-        
+
         <article>
           <h3>Listening to:</h3>
           <ul class="podcasts">
@@ -248,18 +259,23 @@
               <iframe src="https://open.spotify.com/embed-podcast/episode/0q2MBW2TvwPD2hHJT9z60l" width="90%"
                 height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </li>
+            <!-- <li>
+              <iframe src="https://open.spotify.com/embed/album/1yGbNOtRIgdIiGHOEBaZWf" width="300" height="380"
+                frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </li> -->
           </ul>
 
         </article>
+
+
       </div>
     </section>
 
-    <section class="parallax"></section>
     <!-- Contact -->
     <section id="contact">
-      
+
       <article class="contact-section">
-        <h2>Get in touch</h2>
+        <h2 id="header-2">Get in touch</h2>
         <a href="https://www.linkedin.com/in/lydiaawood/" target="blank" id="project-link-text">
           <img src="assets/skills-icons/icons8-linkedin-50.png" alt="linkedin logo">
           Connect with me
@@ -275,7 +291,7 @@
       </article>
 
       <article class="contact-section">
-        <h2>About this site</h2>
+        <h2 id="header-2">About this site</h2>
         <p>
           I want this website to be accessible to everyone. If it isn't, then email me and let me know so I can fix it!
         </p>
@@ -286,9 +302,9 @@
     <section class="parallax"></section>
     <footer>
       <small>Created by Lydia Wood 2021
-        <br/>
-        
-      <small>Images from Pexels and Pixabay. Icons from icon8.com</small>
+        <br />
+
+        <small>Images from Pexels and Pixabay. Icons from icon8.com</small>
     </footer>
   </main>
   <script src="index.js"></script>
