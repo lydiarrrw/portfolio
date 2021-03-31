@@ -326,11 +326,15 @@ label {
 .project-link-align {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width:40%;
+ 
 }
 
 
 #project-link-text {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 10px;
   
