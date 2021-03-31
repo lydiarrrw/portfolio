@@ -164,7 +164,7 @@ flex-direction: column;
 }
 
 .single-craft-long {
-  width:30%;
+  width: 30%;
   height: 100%;
   margin: 5px;
 }
@@ -311,7 +311,7 @@ label {
 .project-image {
   width: 100%;
   height: 100%;
-  display: flex;
+  /* display: flex; */
  
 }
 
