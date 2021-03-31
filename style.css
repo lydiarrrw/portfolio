@@ -7,11 +7,13 @@ body {
   /* background-size: cover; */
   width: 100%;
   position: absolute;
- 
+
 }
 
 main {
-  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
 }
 
 .skip-to-content-link {
@@ -132,6 +134,7 @@ small {
   align-items: center;
   padding-top:10%;
   background-color: whitesmoke;
+  margin: 0;
 }
 
 #recently {
@@ -210,6 +213,7 @@ a, .single-podcast{
 #skills {
   padding: 5%;
   background-color: whitesmoke;
+  margin: 0;
 }
 
 #skillsList {
@@ -311,8 +315,6 @@ label {
 .project-image {
   width: 100%;
   height: 100%;
-  /* display: flex; */
- 
 }
 
 
