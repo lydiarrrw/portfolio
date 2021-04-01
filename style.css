@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 
-body {
-  background:linear-gradient( rgba(0, 0, 0, 5), rgba(0, 0, 0, 5)), url("./assets/wood.jpg");
+body, html {
+  background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./assets/wood.jpg");
   background-size: cover;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   margin:0;
   padding:0;
@@ -28,7 +29,7 @@ body {
 
 /* button, #animationsControl{
   background-color:#373b38;
-  color: whitesmoke;
+  color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
   border: none;
@@ -64,7 +65,7 @@ a {
 
 h1 {
   font-family: 'Mulish', sans-serif;
-  color:  whitesmoke;
+  color:  white;
   font-size: 5em;
   margin: 2px; 
 }
@@ -121,7 +122,7 @@ footer, .footer-text {
 }
 
 hr {
-  background-color: whitesmoke;
+  background-color: white;
   border: white solid 3px;
   width: 70%;
 }
@@ -130,7 +131,7 @@ hr {
 /* ----------SKILLS------------- */
 #skills {
   padding: 5%;
-  background-color: whitesmoke;
+  background-color: white;
   margin: 0;
 }
 
@@ -261,12 +262,12 @@ label {
   flex-direction: column-reverse;
   align-items: center;
   padding-top:10%;
-  background-color: whitesmoke;
+  background-color: white;
   margin: 0;
 }
 
 .love-to-listen {
-  background-color: whitesmoke;
+  background-color: white;
  }
  
  #podcasts{
@@ -308,7 +309,7 @@ label {
   display: flex;
   flex-direction: column;
   padding: 5%;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .recently-order {
@@ -369,7 +370,7 @@ label {
   display: flex;
   flex-direction: column;
   opacity: 1;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 30px;
   margin: 20px 20px;
 }
@@ -401,7 +402,7 @@ label {
   }
 
   nav, .menu-item {
-    color :whitesmoke;
+    color :white;
     font-weight: bolder;
     margin: 0px;
     font-size: 1.2em;
