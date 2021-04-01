@@ -183,14 +183,18 @@ flex-direction: column;
 }
 
 #podcasts{
-  height:100px ;
+  height:250px ;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
  }
 
 .listen-to {
-  height: 350px;
+  /* height: 350px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a, .single-podcast{
@@ -263,12 +267,18 @@ label {
   padding: 5%;
 }
 
+.contact-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;
   opacity: 1;
   background-color: whitesmoke;
-  padding: 10px;
+  padding: 30px;
   margin: 20px 20px;
 }
 
@@ -339,7 +349,9 @@ label {
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  
+  font-size: 1em;  
+  text-align: center;
+  width: 200px;
 }
 
 .pin {
@@ -379,16 +391,11 @@ footer, .footer-text {
   #headerimg {
     height: 100vh;
   }
-    /* width: 100%;
-    background-size: cover;
-  } */
-  
+
   #headerText {
    padding-top: 20%;
-  
   }
   
-
   #navmenu {
     display: flex;
     flex-direction: row;
@@ -435,18 +442,20 @@ footer, .footer-text {
   }
 
   .listen-to {
-    height: 150px;
+    align-items: flex-start;
   }
-
 
   .contactForm { 
     flex-direction: row;
   }
 
+  .contact-align {
+    align-items: flex-start;
+  }
 
-  a, .project-link {
-    height: auto;
-    width: 40%;
+  a, .project-link-text {
+   
+    width: 100%;
   }
 
 
@@ -475,20 +484,17 @@ footer, .footer-text {
     padding: 5px 10px 5px 10px;
   }
   
-
-  
   .projects-mobile {
     display: flex;
     flex-direction: row;
   }
 
   .project-image-mob {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     padding-left: 8px;
-    
+   }
 
-  }
   .project-desc-mob {
     width: 50%;
     padding: 5px 0 0 5px;
@@ -507,7 +513,7 @@ footer, .footer-text {
   #project-link-text {
     color: #373b38;
     text-align: left;
-  
+    flex-direction: row;
   }
   
   .project-cards {
@@ -523,11 +529,11 @@ footer, .footer-text {
     margin:20px;
   }
 
-  .mob-card {
+  /* .mob-card {
     display: flex;
     flex-direction: column;
     width: 50%;
-  }
+  } */
 
   .recently-order {
     flex-direction: row;
@@ -543,11 +549,11 @@ footer, .footer-text {
 
   .contact-section {
     width: 50%;
+   
   }
   
   .section-break {
   min-height: 40px; 
-
 }
 
 }
