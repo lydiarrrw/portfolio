@@ -1,0 +1,65 @@
+.adventure__polaroid_container {
+  display: flex;
+  height: 44%;
+}
+
+.adventure__polaroid_container--left {
+  display: flex;
+  justify-content: start;
+}
+
+.adventure__polaroid_container--left:nth-child(2) {
+  justify-content: start;
+  top: 3%;
+  position: relative;
+}
+
+.adventure__polaroid_container--left:nth-child(4) {
+  justify-content: start;
+  top: -22%;
+  position: relative;
+}
+
+.adventure__polaroid_container--right {
+  display: flex;
+  justify-content: end;
+  top: -12%;
+  position: relative;
+}
+
+.adventure__polaroid {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 5) 1.95px 1.95px 2.6px;
+  transform: rotate(-1deg);
+  margin: 1rem;
+}
+
+.adventure__polaroid_container--right .adventure__polaroid {
+  transform: rotate(1deg);
+}
+
+.adventure__image--container {
+  margin: 7.5%;
+  width: 85%;
+  /* height: 85%; */
+}
+
+.adventure__image {
+  width: 100%;
+  height: auto;
+}
+
+.adventure__text {
+  height: 5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .adventure__polaroid_container--left:nth-child(4) {
+    top: -35%;
+  }
+}

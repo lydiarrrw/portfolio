@@ -1,551 +1,400 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body, html {
-  background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./assets/wood.jpg");
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  margin:0;
-  padding:0;
+body {
+  font-family: sans-serif;
+  overflow: hidden;
 }
 
-.skip-to-content-link {
-  background: white;
-  height: 30px;
-  left: 5%;
-  width: 150px;
-  padding: 1px;
-  position: absolute;
-  transform: translateY(-100%);
-  transition: transform 0.3s;
-}
-
-.skip-to-content-link:focus {
-  transform: translateY(0%);
-}
-
-/* button, #animationsControl{
-  background-color:#373b38;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1em;
-  border: none;
-  margin: 5px;
-} */
-
-#headerimg {
-  height: 60vh;
-  max-height: 2832px;
+main {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-nav {
-  visibility: hidden;
 }
 
 a {
-  color: #373b38;
-  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: black;
 }
 
-#headerText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 1;
-  text-align: center;
-
+.external-link-text {
+  text-decoration: underline;
 }
 
-h1 {
-  font-family: 'Mulish', sans-serif;
-  color:  white;
-  font-size: 5em;
-  margin: 2px; 
-}
-
-#roles {
-  font-family: 'Poppins', sans-serif;
-  font-size: 4vw;
-  color: white;
-  margin: 0px;
-}
-
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2em;
-  color: #373b38;
-  margin-bottom: 0px;
-  font-weight: bold;
-}
-
-#header-2 {
-  color: white;
-  font-weight: bolder;
-}
-
-h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
-  color:  #373b38;
-  margin: 10px 0 8px 0;
+.external-link-text:hover {
+  box-shadow: inset 300px 0 0 0 #fcca03;
+  color: black;
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1em;
-  color: #373b38;
-  margin-top: 0px;
+  font-family: "Edu TAS Beginner", cursive;
 }
 
-small {
-  font-size: 8px;
-}
-
-footer, .footer-text {
-  display: flex;
-  justify-content: center;
-  color: #373b38;
-  background-color: white;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-}
-
-.section-break {
-  min-height: 15px; 
-}
-
-hr {
-  background-color: white;
-  border: white solid 3px;
-  width: 70%;
-}
-
-
-/* ----------SKILLS------------- */
-#skills {
-  padding: 5%;
-  background-color: white;
+h1 {
+  color: #fcca03;
+  text-shadow: -2px 0 #111827, 0 -2px #111827, 2px 0 #111827, 0 2px #111827,
+    2px 2px #111827, -2px -2px #111827, -2px 2px #111827, 2px -2px #111827,
+    6px 6px black;
+  font-size: 12vw;
+  font-weight: bold;
+  letter-spacing: 5px;
   margin: 0;
+  text-transform: uppercase;
 }
 
-#skillsList {
-  list-style-type: none;
+h2 {
+  font-family: sans-serif;
+}
+
+.web-container {
   display: flex;
-  flex-wrap: wrap;
 }
 
-#listOfSkills {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
-}
-
-#singleSkill {
+.web-container--name {
+  width: 40%;
   display: flex;
   flex-direction: column;
-  font-size: 0.8em;
-  font-family: 'Poppins', sans-serif;
-  color: #373b38;
-  align-items: center;
-  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 2rem;
 }
 
-#skillsList {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 75%;
-  padding: 0px;
-  margin: 0px;
-}
-
-label {
+.web-container--name--subtitle {
   font-size: 2vw;
-  font-family: 'Poppins', sans-serif;
-  color: #373b38;
+  text-transform: uppercase;
+  font-family: "Edu TAS Beginner", cursive;
 }
 
+#options-container {
+  width: 60%;
+}
 
-/* ----------PROJECTS------------- */
-
-#projects {
+#article__article-items {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  padding: 5%;
+  padding-left: 2%;
 }
 
-.project-desc, .project-desc-mob {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+.article__article-items--p {
+  display: none;
+  font-size: 2rem;
+  margin: 0 0.5rem 1rem 0;
 }
 
-.project-cards {
-  box-shadow: 2px 2px 2px 2px #a7a79f3b;
-  margin-bottom: 20px;
-  padding: 8px 8px 8px 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+.article__article-items-container:hover {
+  width: 15%;
+  cursor: pointer;
+  transition: width 0.5s;
 }
 
-.project-cards-rev {
-  box-shadow: 2px 2px 2px 2px #a7a79f3b;
-  margin-bottom: 10px;
-  padding: 8px 8px 8px 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fffaf7;
-  background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");  
+.article__article-items-container:nth-child(4):hover {
+  width: 90%;
 }
 
-.project-image {
-  width: 100%;
-  height: 100%;
+.article__article-items-container:hover .article__article-items--p {
+  display: block;
 }
 
-.project-link-logo {
-  width: 35px;
-  height: 35px;
-  padding: 5px;
-  align-items: center;
-}
-
-.project-link-align {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#project-link-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  font-size: 1em;  
-  text-align: center;
-  width: 200px;
-}
-
-.pin {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  box-shadow: 2px 1px 1px 1px rgb(131, 126, 126);
-  background: radial-gradient(circle at 5px 10px, #FAFAD2, #DAA520);
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-
-/* ----------ABOUT ME------------- */
-.lydia {
-  border-radius: 50%;
-  width: 30%;
-  height: 30%;
-}
-
-#aboutMeSection {
+.article__article-items__tab-headings {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  padding-top:10%;
-  background-color: white;
-  margin: 0;
 }
 
-.love-to-listen {
+/* .hover-more {
+  display: block;
+  font-family: "Edu TAS Beginner", cursive;
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  bottom: 22%;
+  right: 7%;
   background-color: white;
- }
- 
- #podcasts{
-   height:250px ;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-  }
- 
- .listen-to {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- 
- a, .single-podcast{
-   padding: 1px;
-   width: 100px;
-   height:auto;
-   margin:1px;
- }
- 
- .podcast-img {
-   height:100px;
- }
- 
- .aboutMeText {
-   display: flex;
-   flex-direction: column;
-   padding:0% 10%;
- }
-
-
-
-
-/* ----------RECENTLY------------- */
-#recently {
+  border: 3px solid black;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  padding: 5%;
-  background-color: white;
-}
+  align-items: center;
+  font-size: 2vw;
+  padding: 1rem;
+  text-align: center;
+  -webkit-box-shadow: 10px 9px 0px 3px rgba(252, 202, 3, 1);
+  -moz-box-shadow: 10px 9px 0px 3px rgba(252, 202, 3, 1);
+  box-shadow: 10px 9px 0px 3px rgba(252, 202, 3, 1);
+} */
 
-.recently-order {
+.article__article-items-container {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
   display: flex;
-  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  background-color: #fcca03;
+  border: 3px solid black;
+  border-left: none;
+  height: 100vh;
+  width: 10%;
+  transition: width 0.3s;
 }
 
-.recently-learn {
+.article__article-items_content {
+  display: none;
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+
+.article__article-items-container:nth-child(1) {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(135deg, #fcca03 25%, transparent 25%),
+    linear-gradient(225deg, #fcca03 25%, transparent 25%),
+    linear-gradient(45deg, #fcca03 25%, transparent 25%),
+    linear-gradient(315deg, #fcca03 25%, white 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+.article__article-items-container.hover-effect .article__article-items_content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  width: 100%;
+  height: 75%;
 }
 
-.recently-icon {
-  height: 70px;
-  width: 70px;
+.article__article-items-container:nth-child(1) .article__article-items_content {
+  padding: 0 4rem;
 }
 
-.craft-order {
-  display: flex;
-  flex-direction: row;
+.article__article-items-container:nth-child(2) {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(
+    to right,
+    #fcca03,
+    #fcca03 5px,
+    white 5px,
+    white
+  );
+  background-size: 10px 100%;
 }
 
-.single-craft-long {
-  width: 30%;
-  height: 100%;
-  margin: 5px;
+.article__article-items-container:nth-child(3) {
+  background-color: #fcca03;
 }
 
-.single-craft {
-  width:30%;
-  height: 80%;
-  margin: 5px;
+.article__article-items-container:nth-child(4) {
+  width: 70%;
+  background-color: white;
+  background-image: radial-gradient(#fcca03 1.5px, white 1.5px);
+  background-size: 10px 10px;
 }
 
-.courses {
-  color: #373b38;
-  font-family: 'Poppins', sans-serif;
+.article__article-items-container.hover-effect
+  ~ .article__article-items-container:nth-child(4) {
+  width: 10%;
 }
 
-
-/* ----------CONTACT ME------------- */
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
-}
-
-.contact-align {
+.article__article-items-container.hover-effect {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  writing-mode: unset;
+  transform: unset;
+  background-color: #e5e5f7;
+  background-size: 20px 20px;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #fcca0356,
+    #fcca0356 1px,
+    white 1px,
+    white
+  );
+  border-right: none;
+  border-left: 3px solid black;
+  transition: width 0.3s;
+  cursor: auto;
+}
+
+.article__article-items--h2 {
+  margin: 0 1rem 1rem 0;
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  font-size: 2vw;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+/* #article__article-items:hover ~ .hover-more {
+  display: none;
+} */
+
+.article__article-items_contact {
+  list-style-type: none;
+}
+
+.article__article-items_contact li {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.article__article-items_contact_icon {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.lydia-container {
+  display: flex;
   align-items: center;
 }
 
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  opacity: 1;
-  background-color: white;
-  padding: 30px;
-  margin: 20px 20px;
+.lydia {
+  transform: scaleX(-1);
+  width: 90%;
+  height: auto;
+  bottom: -5rem;
+  position: relative;
 }
 
+.lydia-its-me__arrow-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.lydia-its-me__arrow {
+  transform: rotate(64deg);
+  height: 10rem;
+  right: -6rem;
+  position: relative;
+}
 
+.article__article-items-close {
+  display: none;
+}
 
-/* --------------------------------------*/
-/* -----------DESKTOP -------------------*/
-/* --------------------------------------*/
+.article__article-items-container.hover-effect .article__article-items-close {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 2rem;
+}
 
-@media only screen and (min-width: 770px) {
-  #headerimg {
-    height: 100vh;
+@media screen and (max-width: 900px) {
+  body {
+    overflow: scroll;
   }
 
-  #headerText {
-   padding-top: 20%;
-  }
-  
-  #navmenu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: space-between;
-    width: 45%;
-    padding-right:20px;
-  }
-
-  nav, .menu-item {
-    color :white;
-    font-weight: bolder;
-    margin: 0px;
-    font-size: 1.2em;
-    display: flex;
-    justify-content: flex-end;
-    visibility: visible;
-    text-decoration: none;
-    padding:3px;
-    height: 40px;
-    margin-right: 2px;
-  }
-
-
-  #aboutMeSection {
-    display: flex;
-    flex-direction: row;
-    padding: 5%;
-    align-items: flex-start;
-  }
-
-  .aboutMeText {
-    display: flex;
+  .web-container {
     flex-direction: column;
-    padding: 0 10px 0 0;
   }
-  
-  #singleSkill {
-    display: flex;
-    flex-direction: column;
-    color: #373b38;
+
+  .web-container--name {
     align-items: center;
-    padding: 10px;
-  }
-
-  .listen-to {
-    align-items: flex-start;
-  }
-
-  .contactForm { 
-    flex-direction: row;
-  }
-
-  .contact-align {
-    align-items: flex-start;
-  }
-
-  a, .project-link-text {
     width: 100%;
+    margin: 2rem 0;
+    height: 30vh;
   }
 
+  .web-container--name--subtitle {
+    font-size: 5vw;
+  }
 
-  a, .project-image {
-    height: 40%;
+  h1 {
+    width: 75%;
+    font-size: 18vw;
+  }
+
+  #options-container {
     width: 100%;
-    display: flex;
-    margin-left: 0;
+    /* height: 70vh; */
   }
 
-   .single-project {
-    display: flex;
-    flex-direction: row;
-    }
-  
-  .single-project-rev {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  
-   .project-image {
-    width: 100%;
-    max-width: 500px;
-    height: 100%;
-    display: flex;
-    padding: 5px 10px 5px 10px;
-  }
-  
-  .projects-mobile {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #project-image-mob {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-  }
-
-  .project-desc-mob {
-    width: 50%;
-    padding: 5px 0 0 5px;
-  }
-
-  .project-desc, .project-desc-mob {
-    display: flex;
+  #article__article-items {
     flex-direction: column;
-    text-align: left;
-    align-items: flex-start;
-    max-width: 60%;
+    height: 60vh;
+    padding: 0;
+    display: flex;
   }
 
-  #project-link-text {
-    color: #373b38;
-    text-align: left;
-    flex-direction: row;
-  }
-  
-  .project-cards {
-    margin: 20px;
-    transform: rotate(-1deg);
-    border-radius: 1px;
-    box-shadow: 6px 2px 6px 2px rgb(88, 85, 85);
+  #article__article-items .article__article-items-container.hover-effect {
+    height: unset;
   }
 
-  .project-cards-rev {
-    transform: rotate(1deg);
-    box-shadow: 6px 2px 6px 2px rgb(88, 85, 85);
-    margin:20px;
+  .article__article-items-container.article__article-items-container.hover-effect {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    border-left: none;
+    justify-content: start;
   }
 
-  .recently-order {
-    flex-direction: row;
+  .article__article-items-container {
+    writing-mode: unset;
+    transform: unset;
+    height: 10%;
+    width: 100vw;
+    border-bottom: none;
+    border-right: none;
   }
 
-  .recently-learn {
-    width: 50%;
+  .article__article-items_content {
+    padding: 0 3rem;
   }
 
-  #contact {
-    flex-direction: row;
+  .article__article-items-container:nth-child(1)
+    .article__article-items_content {
+    padding: 0 2rem;
   }
 
-  .contact-section {
-    width: 50%;
-  }
-  
-  .section-break {
-    min-height: 40px; 
+  .article__article-items-container:nth-child(4) {
+    width: 100vw;
+    flex-grow: 4;
+    display: flex;
+    align-items: start;
   }
 
+  .article__article-items-container:nth-child(4):hover {
+    width: 100%;
+  }
+
+  .article__article-items-container.hover-effect
+    ~ .article__article-items-container:nth-child(4) {
+    width: 100%;
+  }
+
+  .article__article-items-container:hover {
+    width: 100%;
+  }
+
+  .hover-more {
+    display: none;
+  }
+
+  .article__article-items--h2 {
+    font-size: 5vw;
+    margin: 1rem;
+  }
+
+  .article__article-items--p {
+    display: none;
+  }
 }
 
-@media (prefers-reduced-motion) {
-  .animation {
-    animation-name: dissolve;
+@media screen and (min-width: 480px) and (max-width: 899px) {
+  h1 {
+    font-size: 11vw;
+  }
+
+  .web-container--name--subtitle {
+    font-size: 3vw;
+  }
+
+  .article__article-items--h2 {
+    font-size: 3vw;
   }
 }
-
