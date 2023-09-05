@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    title: "🧘‍♀️ Rachaels Site",
+    title: "🧘‍♀️ Yoga Teacher",
     description: "UNDER CONSTRUCTION",
     tags: ["react.js", "next.js"],
     type: "work",
@@ -66,7 +66,9 @@ function displayItems(items) {
         <div class="project__description project__hover--hidden">
           <h4>${item.title}</h4> 
         </div>
-        <p class="project__hover--show project__hover--description">${item.description}</p>
+        <p class="project__hover--show project__hover--description">${
+          item.description
+        }</p>
         <div class="project__tags project__hover--hidden">
           ${tags
             .map((tag) => `<div class="project__tag">${tag}</div>`)
