@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    title: "🧘‍♀️ Yoga Teacher",
+    title: "🧘‍♀️ Restore Yoga",
     description: "UNDER CONSTRUCTION",
     tags: ["react.js", "next.js"],
     type: "work",
