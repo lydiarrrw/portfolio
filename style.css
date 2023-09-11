@@ -282,6 +282,7 @@ h2 {
   display: flex;
   align-self: flex-end;
   margin-right: 2rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
