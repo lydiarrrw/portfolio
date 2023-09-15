@@ -1,12 +1,3 @@
-to do:
+<h1>My portfolio site</h1>
+See me live: <a href="https://www.lydiawood.co.uk/" target="_blank">https://www.lydiawood.co.uk/</a>
 
-All
-* scroll for more - maybe add js to show if there's more projects, or add a time out or something to make it clearer you can scroll
-* height and positioning of polaroids - check at different screen heights
-
-desktop
-* maybe add a skills section at the bottom?
-
-mobile
-* alignment of contact heading is not centred
-* make skill tags on projects yellow - maybe just text and commas, not tag style
