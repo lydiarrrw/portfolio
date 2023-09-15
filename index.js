@@ -61,6 +61,8 @@ function displayItems(items) {
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     const tags = item.tags;
+    const showLink = item.description !== 'UNDER CONSTRUCTION'; // Check if description is not 'UNDER CONSTRUCTION'
+
     projectHtml += `
       <div href="" class="projects__project">
         <div class="project__description project__hover--hidden">
@@ -77,19 +79,21 @@ function displayItems(items) {
         <div class="project__hover--show project__see-more">
           <p>See more:</p>
           <div class="project__links__more">
-            <a 
-            href="${item.liveSite}" 
-            class="project__links project__tag"
-            target="_blank"
-          >
-            live
-          </a>
+            ${showLink ? `
+              <a 
+                href="${item.liveSite}" 
+                class="project__links project__tag"
+                target="_blank"
+              >
+                live
+              </a>
+            ` : ''}
             <a 
               href="${item.github}" 
               class="project__links project__tag"
               target="_blank"
             >
-                code
+              code
             </a>
           </div>
         </div>

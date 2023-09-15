@@ -145,6 +145,7 @@
 
 .project__links__more {
   display: flex;
+  justify-content: center;
 }
 
 .project__hover--description {
