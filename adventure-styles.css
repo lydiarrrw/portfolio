@@ -63,3 +63,9 @@
     top: -35%;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .adventure__polaroid_container {
+    min-height: 24rem;
+  }
+}

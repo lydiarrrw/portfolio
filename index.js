@@ -5,8 +5,8 @@ const projects = [
     description: "UNDER CONSTRUCTION",
     tags: ["react.js", "next.js"],
     type: "work",
-    github: "https://github.com/lydiarrrw",
-    liveSite: "https://github.com/lydiarrrw",
+    github: "",
+    liveSite: "",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projects = [
     tags: ["react.js"],
     type: "work",
     github: "https://github.com/lydiarrrw/galette-simple",
-    liveSite: "https://github.com/lydiarrrw",
+    liveSite: "",
   },
   {
     id: 3,
@@ -61,7 +61,8 @@ function displayItems(items) {
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     const tags = item.tags;
-    const showLink = item.description !== 'UNDER CONSTRUCTION'; // Check if description is not 'UNDER CONSTRUCTION'
+    const showLinkGithub = item.github
+    const showLinkLive = item.liveSite
 
     projectHtml += `
       <div href="" class="projects__project">
@@ -77,24 +78,29 @@ function displayItems(items) {
             .join("")}
         </div>
         <div class="project__hover--show project__see-more">
+        ${showLinkGithub || showLinkLive ? `
           <p>See more:</p>
+          ` : ''}
           <div class="project__links__more">
-            ${showLink ? `
+            ${showLinkGithub ? `
               <a 
-                href="${item.liveSite}" 
+                href="${item.github}" 
                 class="project__links project__tag"
                 target="_blank"
               >
-                live
+                code
               </a>
             ` : ''}
+            ${showLinkLive ? `
             <a 
-              href="${item.github}" 
+              href="${item.liveSite}" 
               class="project__links project__tag"
               target="_blank"
             >
-              code
+              live
             </a>
+          ` : ''}
+
           </div>
         </div>
       </div>
