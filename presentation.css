@@ -1,0 +1,230 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv {
+  width: 60%;
+  max-width: 70rem;
+  box-shadow: 0px 0px 12px 1px darkgray;
+  padding: 4rem 8rem;
+  position: relative;
+}
+
+.corner-note {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-style: solid;
+  border-width: 166px 166px 0 0;
+  border-color: #edd74c transparent transparent transparent;
+  transform: rotate(0deg);
+  color: aqua;
+}
+
+.corner-note::after {
+  content: "Funner version of a CV";
+  color: black;
+  position: relative;
+  top: -15.3rem;
+  left: 2rem;
+  width: 1rem;
+  display: flex;
+  font-size: 18px;
+  font-style: oblique;
+}
+
+.cv-profile-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.email {
+  color: blue;
+  text-decoration: underline;
+}
+
+.website {
+  display: flex;
+}
+
+#newLink {
+  min-width: 18rem;
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+#newLink p {
+  margin: 0;
+}
+
+.cv-content {
+  display: flex;
+}
+
+.cv-content_container-left {
+  width: 75%;
+}
+
+.cv-article {
+  /* background-color: aquamarine; */
+  margin: 2rem 1rem 2rem 0;
+}
+
+.cv-article.walking {
+  background-color: #edd74c80;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.cv-article.walking h2 {
+  margin-top: 0;
+}
+
+.cv-article.walking ul h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.cv-article.walking p {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.cv-article.birthday {
+  padding: 1rem;
+  outline: 3px dotted black;
+}
+
+.cv-article.birthday ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cv-article.birthday li {
+  width: 46%;
+  margin: 2%;
+}
+
+.cv-article.languages {
+  outline-offset: 4px;
+  outline: 3px dashed #edd74c;
+  padding: 0.5rem;
+}
+
+.cv-article.languages input {
+  border: 0.1rem solid;
+  border-radius: 0.5rem;
+  width: 4rem;
+}
+
+.cv-article.languages input.longer {
+  width: 10rem;
+}
+
+.cv-article.jobs ul li {
+  padding: 0.5rem;
+  position: relative;
+}
+
+.cv-article.places {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #edd74c;
+  padding: 1rem;
+}
+
+.place-container {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.place-container p {
+  margin-left: 1rem;
+}
+
+.qr-code {
+  width: 5rem;
+  height: 5rem;
+}
+
+.dogs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.dogs {
+  width: 16rem;
+  height: 14rem;
+  object-fit: cover;
+}
+
+.secret-message {
+  display: none;
+  font-size: 4rem;
+}
+
+.hidden-image {
+  display: none;
+  position: absolute;
+}
+
+li:hover .hidden-image {
+  display: block;
+}
+
+.hidden-image-img { 
+  width: 350px;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .cv-content {
+    flex-direction: column;
+  }
+
+  .cv-content_container-left {
+    width: 100%;
+  }
+
+  .cv-profile-contact {
+    flex-direction: column;
+  }
+}
