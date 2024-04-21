@@ -92,6 +92,7 @@ ul {
 
 .cv-content {
   display: flex;
+  flex-direction: row;
 }
 
 .cv-content_container-left {
@@ -210,12 +211,18 @@ li:hover .hidden-image {
   display: block;
 }
 
-.hidden-image-img { 
+.hidden-image-img {
   width: 350px;
   height: auto;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 850px) {
+  .cv {
+    width: unset;
+    padding: 9rem 3rem;
+    max-width: 30rem;
+  }
+
   .cv-content {
     flex-direction: column;
   }
@@ -226,5 +233,6 @@ li:hover .hidden-image {
 
   .cv-profile-contact {
     flex-direction: column;
+    word-break: break-word;
   }
 }
