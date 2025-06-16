@@ -69,3 +69,9 @@
     min-height: 24rem;
   }
 }
+
+@media screen and (min-width: 1350px) {
+  .adventure__polaroid_container {
+   height: auto;
+  }
+}
