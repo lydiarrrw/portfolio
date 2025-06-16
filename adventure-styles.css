@@ -73,5 +73,6 @@
 @media screen and (min-width: 1350px) {
   .adventure__polaroid_container {
    height: auto;
+   min-height: unset;
   }
 }
