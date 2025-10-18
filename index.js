@@ -10,24 +10,6 @@ const projects = [
   },
   {
     id: 2,
-    title: "🧘‍♀️ Restore Yoga",
-    description: "UNDER CONSTRUCTION",
-    tags: ["react.js", "next.js"],
-    type: "work",
-    github: "",
-    liveSite: "",
-  },
-  {
-    id: 3,
-    title: "👩🏻‍🍳 Galette Builder",
-    description: "UNDER CONSTRUCTION",
-    tags: ["react.js"],
-    type: "work",
-    github: "https://github.com/lydiarrrw/galette-simple",
-    liveSite: "",
-  },
-  {
-    id: 4,
     title: "🏫 Milburn Village Hall",
     description: "A community hall site I built",
     tags: ["react.js", "html", "css"],
@@ -36,7 +18,7 @@ const projects = [
     liveSite: "https://www.milburnvillagehall.org.uk/#/",
   },
   {
-    id: 5,
+    id: 3,
     title: "🍗 BBQuestion? ",
     description: "Every day is a bbq day (nearly)",
     tags: ["react.js", "css"],
@@ -45,7 +27,7 @@ const projects = [
     liveSite: "https://lydiarrrw.github.io/bbquestion/",
   },
   {
-    id: 6,
+    id: 4,
     title: "👻 Roshman",
     description: "Pacman but not",
     tags: ["javascript", "html", "css"],
@@ -54,13 +36,22 @@ const projects = [
     liveSite: "https://lydiarrrw.github.io/project-1/",
   },
   {
-    id: 7,
+    id: 5,
     title: "🦖 REXFLIX",
     description: "Find a movie to watch using TMDB.",
     tags: ["javascript", "html", "css"],
     type: "fun",
     github: "https://github.com/lydiarrrw/project-2",
     liveSite: "https://lydiarrrw.github.io/project-2/",
+  },
+  {
+    id: 6,
+    title: "👩🏻‍🍳 Galette Builder",
+    description: "UNDER CONSTRUCTION",
+    tags: ["react.js"],
+    type: "work",
+    github: "https://github.com/lydiarrrw/galette-simple",
+    liveSite: "",
   },
 ];
 
@@ -70,8 +61,8 @@ function displayItems(items) {
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     const tags = item.tags;
-    const showLinkGithub = item.github
-    const showLinkLive = item.liveSite
+    const showLinkGithub = item.github;
+    const showLinkLive = item.liveSite;
 
     projectHtml += `
       <div href="" class="projects__project">
@@ -87,11 +78,17 @@ function displayItems(items) {
             .join("")}
         </div>
         <div class="project__hover--show project__see-more">
-        ${showLinkGithub || showLinkLive ? `
+        ${
+          showLinkGithub || showLinkLive
+            ? `
           <p>See more:</p>
-          ` : ''}
+          `
+            : ""
+        }
           <div class="project__links__more">
-            ${showLinkGithub ? `
+            ${
+              showLinkGithub
+                ? `
               <a 
                 href="${item.github}" 
                 class="project__links project__tag"
@@ -99,8 +96,12 @@ function displayItems(items) {
               >
                 code
               </a>
-            ` : ''}
-            ${showLinkLive ? `
+            `
+                : ""
+            }
+            ${
+              showLinkLive
+                ? `
             <a 
               href="${item.liveSite}" 
               class="project__links project__tag"
@@ -108,7 +109,9 @@ function displayItems(items) {
             >
               live
             </a>
-          ` : ''}
+          `
+                : ""
+            }
 
           </div>
         </div>

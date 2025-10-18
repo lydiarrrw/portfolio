@@ -1,187 +1,202 @@
 <!DOCTYPE html>
 <html lang="en" style="font-size: 10px">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="HTML, CSS, JavaScript, web developer, software engineer, frontend, front end">
-  <meta name="author" content="Lydia Wood">
-  <meta name="description" content="Lydia Wood - web developer who wants to break things">
-  <title>Lydia Wood - making and breaking things online</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="project-styles.css">
-  <link rel="stylesheet" href="adventure-styles.css">
-  <link rel="stylesheet" href="icons.css">
-  <link rel="icon" href="assets/lydia-no-background.png" sizes="16x16" type="image/jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;700&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,800;1,700&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, web developer, software engineer, frontend, front end">
+    <meta name="author" content="Lydia Wood">
+    <meta name="description" content="Lydia Wood - web developer who wants to break things">
+    <title>Lydia Wood - making and breaking things online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-styles.css">
+    <link rel="stylesheet" href="adventure-styles.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="icon" href="assets/lydia-no-background.png" sizes="16x16" type="image/jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;700&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,800;1,700&display=swap" rel="stylesheet">
+  </head>
 
-<body>
-  <main>
-    <div class="web-container">
+  <body>
+    <main>
+      <div class="web-container">
 
-      <div class="web-container--name">
-          <h1>Lydia Wood</h1>
-          <p class="web-container--name--subtitle">Making and breaking things online</p>
-      </div>
-      
-      <section id="options-container">
-        <div id="article__article-items">
-          <article class="article__article-items-container">
-            <div class="article__article-items-close">
-              <div class="gg-close"></div>
-            </div>
-            <h2 class="article__article-items--h2">About</h2>
-            <p class="article__article-items_content">
-              I thrive in collaborative environments where the goal is to drive change and create meaningful impact. 
-              My experience working internationally with diverse teams has equipped me with the ability to understand 
-              audiences, empathise with them, and deliver solutions that matter.
-              <br/><br/>
-              After starting my career as a Developer, I've worked with technologies such as PHP (Symfony), 
-              Twig, React.js, Next.js, HTML, SCSS, and JavaScript. This foundation has given me strong problem-solving 
-              and technical skills, as well as an appreciation for accessibility and secure coding practices.
-              <br/><br/>
-              I'm now expanding my interests into cybersecurity, where I’m particularly interested in web application security. 
-              I'm actively building my skills through hands-on learning, including PortSwigger Academy challenges, to deepen my 
-              understanding of vulnerabilities and secure development. My goal is to combine my development expertise with a 
-              security mindset to help build safer, more resilient systems.
-              
-              <a target="_blank" href="https://www.linkedin.com/in/lydiaawood/" class="external-link-text external-link-text_about">Connect with me on LinkedIn.</a>
-            </p>
-          </article>
-         
-          <article class="article__article-items-container">
-            <div class="article__article-items-close">
-              <div class="gg-close"></div>
-            </div>
-            <div class="article__article-items__tab-headings">
-              <h2 class="article__article-items--h2">Making</h2>
-              <!-- <p class="article__article-items--p">Click for more</p> -->
-            </div>
-            <div class="article__article-items_content projects__container">
-                <div class="projects--filter">
-                  <p>Filter by a skill:</p>
-                  <div class="project__tag--filter"> 
-                  <div class="project__tags">
-                  <div class="project__tag project__tag-tag project-filter-selected" onclick="filterProjectsByTag('all')">All</div>
-                    <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('next.js')">next.js</div>
-                    <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('react.js')">react.js</div>
-                    <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('html')">HTML</div>
-                    <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('css')">CSS</div>
-                    <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('javascript')">JavaScript</div>
-                    <div class="project__tag-inactive project__tag-tag" title="No current projects for this skill">PHP</div>
-                  </div>
-                </div>
-            </div>
-            <div id="projects__filtered__container"></div>
-            <!-- <h5>Scroll for more</h5> -->
-          </article>
-          <article class="article__article-items-container">
-            <div class="article__article-items-close">
-              <div class="gg-close"></div>
-            </div>
-            <h2 class="article__article-items--h2">Breaking</h2>
-            <div class="article__article-items_content projects__container">
-              <p>Portswigger progress</p>
-              <h2>What I've been learning/doing</h2>
-              <div class="blog__listing">
-                <div class="blog__article-listing">
-                  <h4>Blog post number one</h4>
-                  <p>short description</p>
-                </div>
-              </div>
-            </div>
-              
-      
-          </article>
-          <article class="article__article-items-container">
-            <div class="article__article-items-close">
-              <div class="gg-close"></div>
-            </div>
-            <h2 class="article__article-items--h2">Adventure</h2>
-            <div class="article__article-items_content">
-              <p>What I've been doing recently</p>
-              <div class="adventure">
-                <div class="adventure__polaroid_container">
-                  <div class="adventure__polaroid">
-                    <div class="adventure__image--container">
-                      <img src="assets/lydia-whw-leap.png" class="adventure__image" alt="lydia leaping with backpack on with mountains behind">
-                    </div>
-                    <p class="adventure__text">Hiking West Highland Way 🏴󠁧󠁢󠁳󠁣󠁴󠁿 </p>
-                  </div>
-                </div>
-                <div class="adventure__polaroid_container">
-                  <div class="adventure__polaroid">
-                    <div class="adventure__image--container">
-                      <img src="assets/lydia-cumbria-way.jpeg" class="adventure__image" alt="lydia resting on rock with view of borrowdale valley behind">
-                    </div>
-                    <p class="adventure__text">Walking the Cumbria Way ⛰  </p>
-                  </div>
-                </div>
-                <div class="adventure__polaroid_container">
-                  <div class="adventure__polaroid">
-                    <div class="adventure__image--container">
-                      <img src="assets/lydia-jukka-pass.jpeg" class="adventure__image" alt="lydia posing in front of small lake with snowcapped mountains behind">
-                    </div>
-                    <p class="adventure__text">Jukka Pass, Kyrgyzstan 🇰🇬 </p>
-                  </div>
-                </div>
-                <div class="adventure__polaroid_container">
-                  <div class="adventure__polaroid">
-                    <div class="adventure__image--container">
-                      <img src="assets/hagrids_hut.jpg" class="adventure__image" alt="lydia resting on rock with view of borrowdale valley behind">
-                    </div>
-                    <p class="adventure__text">Searching for Hagrid's hut ✨  </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </article>
-          <article class="article__article-items-container article__article-items-container--contact">
-            <div class="article__article-items-close">
-              <div class="gg-close"></div>
-            </div>
-            <h2 class="article__article-items--h2">Contact</h2>
-            <div class="article__article-items_content">
-              <ul class="article__article-items_contact">
-                <li>
-                  <img src="./assets/linkedin.svg" alt="github logo" class="article__article-items_contact_icon"/>
-                  Connect with me on&nbsp; <a target="_blank" class="external-link-text" href="https://www.linkedin.com/in/lydiaawood/">LinkedIn</a>
-                </li>
-                <li>
-                  <img src="./assets/github.svg" alt="linkedin logo" class="article__article-items_contact_icon"/>
-                  See my projects on&nbsp; 
-                  <a target="_blank" href="https://github.com/lydiarrrw" class="external-link-text">GitHub</a>
-                </li>
-                <li>
-                  <img src="./assets/email.svg" alt="linkedin logo" class="article__article-items_contact_icon"/>
-                  Email me:&nbsp; 
-                  <a href="mailto:lydiaawood@googlemail.com" class="external-link-text">lydiaawood@googlemail.com</a>
-                </li>
-              </ul>
-              <div class="lydia-container">
-                <div class="lydia-its-me__arrow-container">
-                  <a href="https://youtu.be/b1kbLwvqugk?si=r9NpR3YOvlYHEvo0&t=48" target="_blank" title="In case you aren&#8217;t a swiftie, click for the reference!">It's me, hi, I'm the problem (solver) it's me</a>
-                  <img src="./assets/arrow.svg" class="lydia-its-me__arrow">
-                </div>
-                <img src="./assets/lydia-no-background.png" alt="lydia" class="lydia"/>
-              </div>       
-            </div>
-          </article>
+        <div class="web-container--name">
+            <h1>Lydia Wood</h1>
+            <p class="web-container--name--subtitle">Making and breaking things online</p>
         </div>
-        <!-- <div class="hover-more">
-          <p>Hover to see more</p>
-        </div> -->
-      </section>
-    </div> 
-  </main>
-  <script src="index.js"></script>
-  <script src="mobile.js"></script>
-</body>
+        
+        <section id="options-container">
+          <div id="article__article-items">
+            <article class="article__article-items-container">
+              <div class="article__article-items-close">
+                <div class="gg-close"></div>
+              </div>
+              <h2 class="article__article-items--h2">About</h2>
+              <p class="article__article-items_content">
+                I thrive in collaborative environments where the goal is to drive change and create meaningful impact. 
+                My experience working internationally with diverse teams has equipped me with the ability to understand 
+                audiences, empathise with them, and deliver solutions that matter.
+                <br/><br/>
+                After starting my career as a Developer, I've worked with technologies such as PHP (Symfony), 
+                Twig, React.js, Next.js, HTML, SCSS, and JavaScript. This foundation has given me strong problem-solving 
+                and technical skills, as well as an appreciation for accessibility and secure coding practices.
+                <br/><br/>
+                I'm now expanding my interests into cybersecurity, where I’m particularly interested in web application security. 
+                I'm actively building my skills through hands-on learning, including PortSwigger Academy challenges, to deepen my 
+                understanding of vulnerabilities and secure development. My goal is to combine my development expertise with a 
+                security mindset to help build safer, more resilient systems.
+                
+                <a target="_blank" href="https://www.linkedin.com/in/lydiaawood/" class="external-link-text external-link-text_about">Connect with me on LinkedIn.</a>
+              </p>
+            </article>
+          
+            <article class="article__article-items-container">
+              <div class="article__article-items-close">
+                <div class="gg-close"></div>
+              </div>
+              <div class="article__article-items__tab-headings">
+                <h2 class="article__article-items--h2">Making</h2>
+                <!-- <p class="article__article-items--p">Click for more</p> -->
+              </div>
+              <div class="article__article-items_content projects__container">
+                  <div class="projects--filter">
+                    <p>Filter by a skill:</p>
+                    <div class="project__tag--filter"> 
+                    <div class="project__tags">
+                    <div class="project__tag project__tag-tag project-filter-selected" onclick="filterProjectsByTag('all')">All</div>
+                      <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('next.js')">next.js</div>
+                      <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('react.js')">react.js</div>
+                      <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('html')">HTML</div>
+                      <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('css')">CSS</div>
+                      <div class="project__tag project__tag-tag" onclick="filterProjectsByTag('javascript')">JavaScript</div>
+                      <div class="project__tag-inactive project__tag-tag" title="No current projects for this skill">PHP</div>
+                    </div>
+                  </div>
+              </div>
+              <div id="projects__filtered__container"></div>
+              <!-- <h5>Scroll for more</h5> -->
+            </article>
+            <article class="article__article-items-container">
+              <div class="article__article-items-close">
+                <div class="gg-close"></div>
+              </div>
+              <h2 class="article__article-items--h2">Breaking</h2>
+              <div class="article__article-items_content projects__container homepage_blog">
+                <a href="blog/blog_home.html" title="blog link" class="button-56"> 
+                  Go to blog home
+                </a>
+                <h3 class="blog_h3">Recent blog posts:</h3>
+                <div class="blog_card-container">
+                  <div class="blog_card">
+                    <div>
+                      <h4>My approach to learning more about cyber security</h4>
+                      <p>My plan to get started...</p>
+                    </div>
+                    <a href="blog/blog_posts/2.html" class="blog_link">Read more</a>
+                  </div>
+                  <div class="blog_card">
+                    <div>
+                      <h4>Getting started</h4>
+                      <p>Why I've decided to learn more about cyber security...</p>
+                    </div>
+                    <a href="blog/blog_posts/1.html" class="blog_link">Read more</a>
+                  </div>
+                </div>  
+              </div> 
+            </article>
+            <article class="article__article-items-container">
+              <div class="article__article-items-close">
+                <div class="gg-close"></div>
+              </div>
+              <h2 class="article__article-items--h2">Adventure</h2>
+              <div class="article__article-items_content">
+                <p>What I've been doing recently</p>
+                <div class="adventure">
+                  <div class="adventure__polaroid_container">
+                    <div class="adventure__polaroid">
+                      <div class="adventure__image--container">
+                        <img src="assets/gr55.jpeg" class="adventure__image" alt="lydia high up in mountains with valley behind her">
+                      </div>
+                      <p class="adventure__text"><a href="https://chereisabelle.vercel.app/" class="external-link-text">Click here</a> for French postcards 🇫🇷  </p>
+                    </div>
+                  </div>
+                  <div class="adventure__polaroid_container">
+                    <div class="adventure__polaroid">
+                      <div class="adventure__image--container">
+                        <img src="assets/hagrids_hut.jpg" class="adventure__image" alt="lydia resting on rock with view of borrowdale valley behind">
+                      </div>
+                      <p class="adventure__text">Searching for Hagrid's hut ✨</p>
+                    </div>
+                  </div>
+                  <div class="adventure__polaroid_container">
+                    <div class="adventure__polaroid">
+                      <div class="adventure__image--container">
+                        <img src="assets/lydia-whw-leap.png" class="adventure__image" alt="lydia leaping with backpack on with mountains behind">
+                      </div>
+                      <p class="adventure__text">Hiking West Highland Way 🏴󠁧󠁢󠁳󠁣󠁴󠁿 </p>
+                    </div>
+                  </div>
+                  <div class="adventure__polaroid_container">
+                    <div class="adventure__polaroid">
+                      <div class="adventure__image--container">
+                        <img src="assets/lydia-cumbria-way.jpeg" class="adventure__image" alt="lydia resting on rock with view of borrowdale valley behind">
+                      </div>
+                      <p class="adventure__text">Walking the Cumbria Way ⛰  </p>
+                    </div>
+                  </div>
+                  <div class="adventure__polaroid_container">
+                    <div class="adventure__polaroid">
+                      <div class="adventure__image--container">
+                        <img src="assets/lydia-jukka-pass.jpeg" class="adventure__image" alt="lydia posing in front of small lake with snowcapped mountains behind">
+                      </div>
+                      <p class="adventure__text">Jukka Pass, Kyrgyzstan 🇰🇬 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </article>
+            <article class="article__article-items-container article__article-items-container--contact">
+              <div class="article__article-items-close">
+                <div class="gg-close"></div>
+              </div>
+              <h2 class="article__article-items--h2">Contact</h2>
+              <div class="article__article-items_content">
+                <ul class="article__article-items_contact">
+                  <li>
+                    <img src="./assets/linkedin.svg" alt="github logo" class="article__article-items_contact_icon"/>
+                    Connect with me on&nbsp; <a target="_blank" class="external-link-text" href="https://www.linkedin.com/in/lydiaawood/">LinkedIn</a>
+                  </li>
+                  <li>
+                    <img src="./assets/github.svg" alt="linkedin logo" class="article__article-items_contact_icon"/>
+                    See my projects on&nbsp; 
+                    <a target="_blank" href="https://github.com/lydiarrrw" class="external-link-text">GitHub</a>
+                  </li>
+                  <li>
+                    <img src="./assets/email.svg" alt="linkedin logo" class="article__article-items_contact_icon"/>
+                    Email me:&nbsp; 
+                    <a href="mailto:lydiaawood@googlemail.com" class="external-link-text">lydiaawood@googlemail.com</a>
+                  </li>
+                </ul>
+                <div class="lydia-container">
+                  <div class="lydia-its-me__arrow-container">
+                    <a href="https://youtu.be/b1kbLwvqugk?si=r9NpR3YOvlYHEvo0&t=48" target="_blank" title="In case you aren&#8217;t a swiftie, click for the reference!">It's me, hi, I'm the problem (solver) it's me</a>
+                    <img src="./assets/arrow.svg" class="lydia-its-me__arrow">
+                  </div>
+                  <img src="./assets/lydia-no-background.png" alt="lydia" class="lydia"/>
+                </div>       
+              </div>
+            </article>
+          </div>
+        </section>
+      </div> 
+    </main>
+    <script src="index.js"></script>
+    <script src="mobile.js"></script>
+  </body>
 </html>

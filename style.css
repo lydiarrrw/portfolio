@@ -58,6 +58,7 @@ h1,
   letter-spacing: 5px;
   margin: 0;
   text-transform: uppercase;
+  font-family: sans-serif;
 }
 
 h2 {
@@ -259,6 +260,9 @@ h2 {
 .lydia-container {
   display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 37px;
+  padding: 16px;
 }
 
 .lydia {
@@ -390,6 +394,12 @@ h2 {
   .article__article-items--p {
     display: none;
   }
+
+  .lydia-container {
+    position: unset;
+    bottom: unset;
+    padding: unset;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 899px) {
@@ -403,5 +413,130 @@ h2 {
 
   .article__article-items--h2 {
     font-size: 3vw;
+  }
+}
+
+/* BLOG -most recents */
+
+.homepage_blog .blog_h3 {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.homepage_blog .blog_card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.homepage_blog .blog_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  border: 0.3rem solid #fcca03;
+  border-radius: 1rem;
+  height: 16rem;
+  margin: 10px 0;
+  background-color: #ffffff;
+  padding: 15px;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.homepage_blog .blog_card-border {
+  height: 3px;
+  background-color: #fcca03;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.homepage_blog .blog_card p {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.homepage_blog .blog_card a {
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.homepage_blog .blog_card a:hover {
+  text-decoration: none;
+}
+
+.homepage_blog .blog_link {
+  text-decoration: underline;
+}
+
+.homepage_blog .blog_link:hover {
+  box-shadow: inset 300px 0 0 0 #fcca03;
+  color: black;
+  width: fit-content;
+}
+
+/* CSS https://getcssscan.com/css-buttons-examples */
+.button-56 {
+  align-items: center;
+  background-color: #fcca03;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 20px 0 35px 0;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (max-width: 768px) {
+  .button-56 {
+    padding: 23px 40px;
   }
 }

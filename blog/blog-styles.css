@@ -18,11 +18,14 @@ nav .h1 {
   text-shadow: -1px 0 #111827, 0 -1px #111827, 1px 0 #111827, 0 1px #111827,
     1px 1px #111827, -1px -1px #111827, -1px 1px #111827, 1px -1px #111827,
     3px 3px black;
-  border: 1px solid transparent;
 }
 
-.nav-blog_title:hover {
-  border: 1px solid #000000;
+nav a {
+  border: 3px solid transparent;
+}
+
+nav a:hover {
+  border: 3px solid #000000;
 }
 
 main {
