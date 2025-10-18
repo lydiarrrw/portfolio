@@ -1,6 +1,15 @@
 const projects = [
   {
     id: 1,
+    title: "🇫🇷 Chere Isabelle",
+    description: "Postcards to my French teacher",
+    tags: ["next.js", "supabase"],
+    type: "fun",
+    github: "",
+    liveSite: "https://chereisabelle.vercel.app/",
+  },
+  {
+    id: 2,
     title: "🧘‍♀️ Restore Yoga",
     description: "UNDER CONSTRUCTION",
     tags: ["react.js", "next.js"],
@@ -9,7 +18,7 @@ const projects = [
     liveSite: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "👩🏻‍🍳 Galette Builder",
     description: "UNDER CONSTRUCTION",
     tags: ["react.js"],
@@ -18,7 +27,7 @@ const projects = [
     liveSite: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "🏫 Milburn Village Hall",
     description: "A community hall site I built",
     tags: ["react.js", "html", "css"],
@@ -27,7 +36,7 @@ const projects = [
     liveSite: "https://www.milburnvillagehall.org.uk/#/",
   },
   {
-    id: 4,
+    id: 5,
     title: "🍗 BBQuestion? ",
     description: "Every day is a bbq day (nearly)",
     tags: ["react.js", "css"],
@@ -36,7 +45,7 @@ const projects = [
     liveSite: "https://lydiarrrw.github.io/bbquestion/",
   },
   {
-    id: 5,
+    id: 6,
     title: "👻 Roshman",
     description: "Pacman but not",
     tags: ["javascript", "html", "css"],
@@ -45,7 +54,7 @@ const projects = [
     liveSite: "https://lydiarrrw.github.io/project-1/",
   },
   {
-    id: 6,
+    id: 7,
     title: "🦖 REXFLIX",
     description: "Find a movie to watch using TMDB.",
     tags: ["javascript", "html", "css"],

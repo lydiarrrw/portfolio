@@ -18,8 +18,24 @@ a {
   color: black;
 }
 
+.breadcrumb {
+  text-decoration: underline;
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 16px;
+}
+
+.breadcrumb:hover {
+  box-shadow: inset 300px 0 0 0 #fcca03;
+  color: black;
+  font-family: "Edu TAS Beginner", cursive;
+}
+
 .external-link-text {
   text-decoration: underline;
+}
+
+.external-link-text.external-link-text_about {
+  margin-top: 16px;
 }
 
 .external-link-text:hover {
@@ -31,12 +47,13 @@ p {
   font-family: "Edu TAS Beginner", cursive;
 }
 
-h1 {
+h1,
+.h1 {
   color: #fcca03;
   text-shadow: -2px 0 #111827, 0 -2px #111827, 2px 0 #111827, 0 2px #111827,
     2px 2px #111827, -2px -2px #111827, -2px 2px #111827, 2px -2px #111827,
     6px 6px black;
-  font-size: 12vw;
+  font-size: 9vw;
   font-weight: bold;
   letter-spacing: 5px;
   margin: 0;
@@ -58,12 +75,14 @@ h2 {
   justify-content: center;
   text-align: center;
   margin: 0 2rem;
+  align-items: center;
 }
 
 .web-container--name--subtitle {
   font-size: 2vw;
   text-transform: uppercase;
   font-family: "Edu TAS Beginner", cursive;
+  max-width: 75%;
 }
 
 #options-container {
@@ -88,7 +107,7 @@ h2 {
   transition: width 0.5s;
 }
 
-.article__article-items-container:nth-child(4):hover {
+.article__article-items-container:nth-child(5):hover {
   width: 90%;
 }
 
@@ -101,27 +120,6 @@ h2 {
   flex-direction: column-reverse;
   align-items: center;
 }
-
-/* .hover-more {
-  display: block;
-  font-family: "Edu TAS Beginner", cursive;
-  height: 15rem;
-  width: 15rem;
-  position: absolute;
-  bottom: 22%;
-  right: 7%;
-  background-color: white;
-  border: 3px solid black;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  font-size: 2vw;
-  padding: 1rem;
-  text-align: center;
-  -webkit-box-shadow: 10px 9px 0px 3px rgba(252, 202, 3, 1);
-  -moz-box-shadow: 10px 9px 0px 3px rgba(252, 202, 3, 1);
-  box-shadow: 10px 9px 0px 3px rgba(252, 202, 3, 1);
-} */
 
 .article__article-items-container {
   writing-mode: vertical-lr;
@@ -142,6 +140,11 @@ h2 {
   font-family: "Edu TAS Beginner", cursive;
   font-size: 2rem;
   padding: 0 2rem;
+  overflow-y: scroll;
+}
+
+.article__article-items-container--contact .article__article-items_content {
+  overflow: visible;
 }
 
 .article__article-items-container:nth-child(1) {
@@ -182,10 +185,18 @@ h2 {
 }
 
 .article__article-items-container:nth-child(3) {
-  background-color: #fcca03;
+  background-color: #ffffff;
+  opacity: 0.8;
+  background-image: linear-gradient(#fcca03 1px, transparent 1px),
+    linear-gradient(to right, #fcca03 1px, #ffffff 1px);
+  background-size: 20px 20px;
 }
 
 .article__article-items-container:nth-child(4) {
+  background-color: #fcca03;
+}
+
+.article__article-items-container:nth-child(5) {
   width: 70%;
   background-color: white;
   background-image: radial-gradient(#fcca03 1.5px, white 1.5px);
@@ -193,7 +204,7 @@ h2 {
 }
 
 .article__article-items-container.hover-effect
-  ~ .article__article-items-container:nth-child(4) {
+  ~ .article__article-items-container:nth-child(5) {
   width: 10%;
 }
 
@@ -230,10 +241,6 @@ h2 {
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-
-/* #article__article-items:hover ~ .hover-more {
-  display: none;
-} */
 
 .article__article-items_contact {
   list-style-type: none;
@@ -312,7 +319,6 @@ h2 {
 
   #options-container {
     width: 100%;
-    /* height: 70vh; */
   }
 
   #article__article-items {
@@ -352,19 +358,19 @@ h2 {
     padding: 0 2rem;
   }
 
-  .article__article-items-container:nth-child(4) {
+  .article__article-items-container:nth-child(5) {
     width: 100vw;
     flex-grow: 4;
     display: flex;
     align-items: start;
   }
 
-  .article__article-items-container:nth-child(4):hover {
+  .article__article-items-container:nth-child(5):hover {
     width: 100%;
   }
 
   .article__article-items-container.hover-effect
-    ~ .article__article-items-container:nth-child(4) {
+    ~ .article__article-items-container:nth-child(5) {
     width: 100%;
   }
 

@@ -1,32 +1,3 @@
-.adventure__polaroid_container {
-  display: flex;
-  height: 44%;
-}
-
-.adventure__polaroid_container--left {
-  display: flex;
-  justify-content: start;
-}
-
-.adventure__polaroid_container--left:nth-child(2) {
-  justify-content: start;
-  top: 3%;
-  position: relative;
-}
-
-.adventure__polaroid_container--left:nth-child(4) {
-  justify-content: start;
-  top: -22%;
-  position: relative;
-}
-
-.adventure__polaroid_container--right {
-  display: flex;
-  justify-content: end;
-  top: -12%;
-  position: relative;
-}
-
 .adventure__polaroid {
   display: flex;
   flex-direction: column;
@@ -37,19 +8,10 @@
   margin: 1rem;
 }
 
-.adventure__polaroid_container--right .adventure__polaroid {
-  transform: rotate(1deg);
-}
-
-.adventure__image--container {
-  margin: 7.5%;
-  width: 85%;
-  /* height: 85%; */
-}
-
 .adventure__image {
   width: 100%;
   height: auto;
+  padding: 5px;
 }
 
 .adventure__text {
@@ -58,21 +20,39 @@
   text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
-  .adventure__polaroid_container--left:nth-child(4) {
-    top: -35%;
-  }
+.adventure__polaroid_container {
+  display: flex;
+  position: relative;
 }
 
-@media screen and (min-width: 1200px) {
-  .adventure__polaroid_container {
-    min-height: 24rem;
-  }
+.adventure__polaroid_container:nth-child(even) .adventure__polaroid {
+  transform: rotate(1deg);
 }
 
-@media screen and (min-width: 1350px) {
-  .adventure__polaroid_container {
-   height: auto;
-   min-height: unset;
+.adventure__polaroid_container:nth-child(odd) {
+  justify-content: start;
+  margin-top: -85px;
+}
+
+.adventure__polaroid_container:nth-child(even) {
+  justify-content: end;
+  margin-top: -85px;
+}
+
+.adventure__polaroid_container:first-of-type {
+  margin-top: unset;
+}
+
+@media (max-width: 768px) {
+  .adventure__polaroid {
+    width: unset;
+  }
+
+  .adventure__polaroid_container:nth-child(odd) {
+    margin-top: 45px;
+  }
+  
+  .adventure__polaroid_container:nth-child(even) {
+    margin-top: 45px;
   }
 }

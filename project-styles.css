@@ -7,16 +7,10 @@
 }
 
 #projects__filtered__container {
-  overflow-y: auto;
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  border: 0.3rem solid black;
-  border-radius: 15px;
-  padding: 2rem;
-  background: white;
-  max-height: 60rem;
+  flex-direction: column;
 }
 
 .projects__project-container {
@@ -106,7 +100,6 @@
   text-align: center;
   border: 0.3rem solid #fcca03;
   border-radius: 1rem;
-  width: 46%;
   height: 16rem;
   margin: 2%;
   background-color: #ffffff;
