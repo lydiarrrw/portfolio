@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    title: "🇫🇷 Chere Isabelle",
+    title: "🇫🇷 Chère Isabelle",
     description: "Postcards to my French teacher",
     tags: ["next.js", "supabase"],
     type: "fun",

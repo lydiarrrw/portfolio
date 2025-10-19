@@ -40,8 +40,8 @@ main {
 .blog_post-h1 {
   text-shadow: unset;
   color: #000000;
-  margin: 15px 0 25px 0;
-  font-size: 4vw;
+  margin: 15px 0 15px 0;
+  font-size: 3vw;
 }
 
 .blog_highlight {
@@ -81,7 +81,7 @@ main {
 }
 
 h2 {
-  margin-bottom: 10px;
+  margin: 2.5rem 0 1rem 0;
   font-size: 20px;
 }
 
@@ -98,6 +98,13 @@ h2 {
   font-family: sans-serif;
 }
 
+.blog_card .blog_card_date {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 10px 0;
+  font-style: italic;
+}
+
 .blog_card a {
   font-size: 16px;
   text-decoration: underline;
@@ -112,15 +119,30 @@ h2 {
   text-decoration: underline;
 }
 
-.blog_link:hover {
+.blog_link:hover,
+.blog_card:hover .blog_link {
   box-shadow: inset 300px 0 0 0 #fcca03;
   color: black;
   width: fit-content;
 }
 
-.blog_post-text {
+.blog_card:hover .blog_card-border {
+  background-color: #000000;
+}
+
+.blog_card:hover h2 {
+  text-decoration: underline;
+}
+
+.blog_post-text,
+ol {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 16px;
+}
+
+ol {
+  padding-left: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -180,4 +202,13 @@ h2 {
   background-color: rgba(255, 255, 255, 0.9);
   border-left: 6px solid #fcca03;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog_card h2 {
+  line-height: 1.2em; /* adjust as needed */
+  height: calc(1.2em * 2); /* 2 lines tall */
+  overflow: hidden; /* hide overflow text */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* show max 2 lines */
+  -webkit-box-orient: vertical;
 }
