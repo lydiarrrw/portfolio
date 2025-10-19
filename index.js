@@ -184,3 +184,29 @@ function tagClassAddRemove(tag) {
 }
 
 displayItems(projects);
+
+
+// Show/hide more arrow on overflow
+
+document.addEventListener("DOMContentLoaded", () => {
+  const containers = document.querySelectorAll(".article__article-items_content");
+
+  containers.forEach(container => {
+    const checkScroll = () => {
+      const scrollBottom = container.scrollTop + container.clientHeight;
+      const atBottom = scrollBottom >= container.scrollHeight  - 1;
+
+      container.classList.toggle(
+        "article__article-items_content--scrolled",
+        atBottom
+      );
+    };
+
+    checkScroll();
+
+    container.addEventListener("scroll", checkScroll);
+
+    const resizeObserver = new ResizeObserver(checkScroll);
+    resizeObserver.observe(container);
+  });
+});

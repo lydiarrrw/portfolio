@@ -141,6 +141,10 @@
   justify-content: center;
 }
 
+.project__description {
+  font-family: sans-serif;
+}
+
 .project__hover--description {
   margin-bottom: 0.5rem;
 }

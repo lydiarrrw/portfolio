@@ -170,6 +170,7 @@ h2 {
 
 .article__article-items-container:nth-child(1) .article__article-items_content {
   padding: 0 4rem;
+  position: relative;
 }
 
 .article__article-items-container:nth-child(2) {
@@ -508,7 +509,7 @@ h2 {
 .button-56 {
   align-items: center;
   background-color: #fcca03;
-  border: 2px solid #111;
+  border: 2px solid #000000;
   border-radius: 8px;
   box-sizing: border-box;
   color: #111;
@@ -532,7 +533,7 @@ h2 {
 }
 
 .button-56:after {
-  background-color: #111;
+  background-color: #000000;
   border-radius: 8px;
   content: "";
   display: block;
@@ -551,7 +552,7 @@ h2 {
 }
 
 .button-56:active {
-  background-color: #ffdeda;
+  background-color: #fcca03;
   outline: 0;
 }
 
@@ -567,4 +568,32 @@ h2 {
   .homepage_blog .blog_card {
     font-size: 16px;
   }
+}
+
+
+/* Arrow */
+.article__article-items_content::after {
+  content: "\2193";
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 10px;
+  font-size: 3rem;
+  color: #fcca03;
+  pointer-events: none;
+}
+
+.article__article-items_content--scrolled::after {
+  opacity: 0;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+.article__article-items_content::after {
+  animation: bounce 1.5s infinite ease-in-out;
 }
