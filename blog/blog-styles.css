@@ -41,7 +41,7 @@ main {
   text-shadow: unset;
   color: #000000;
   margin: 15px 0 15px 0;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .blog_highlight {
@@ -167,16 +167,17 @@ ol {
     font-size: 60px;
   }
 
+  .blog_post-h1 {
+    font-size: 7vw;
+    width: 100%;
+  }
+
   .blog_header {
     padding: unset;
   }
 
   .web-container--name--subtitle {
     font-size: 4vw;
-  }
-
-  .blog_post-h1 {
-    font-size: 10vw;
   }
 
   .blog_card-container {
