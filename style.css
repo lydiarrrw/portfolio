@@ -401,6 +401,10 @@ h2 {
     bottom: unset;
     padding: unset;
   }
+
+  .article__article-items_content {
+    overflow-y: unset;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 899px) {
@@ -596,4 +600,10 @@ h2 {
 
 .article__article-items_content::after {
   animation: bounce 1.5s infinite ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .article__article-items_content::after {
+    display: none;
+  }
 }
