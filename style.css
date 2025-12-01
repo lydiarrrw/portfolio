@@ -401,10 +401,6 @@ h2 {
     bottom: unset;
     padding: unset;
   }
-
-  .article__article-items_content {
-    overflow-y: unset;
-  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 899px) {
@@ -454,7 +450,6 @@ h2 {
 .homepage_blog .blog_card:hover {
   box-shadow: rgba(0, 0, 0, 5) 1.95px 1.95px 2.6px;
 }
-
 
 .homepage_blog .blog_card h4 {
   margin-bottom: 3px;
@@ -574,7 +569,6 @@ h2 {
   }
 }
 
-
 /* Arrow */
 .article__article-items_content::after {
   content: "\2193";
@@ -594,16 +588,15 @@ h2 {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(5px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
 }
 
 .article__article-items_content::after {
   animation: bounce 1.5s infinite ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .article__article-items_content::after {
-    display: none;
-  }
 }
