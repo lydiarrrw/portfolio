@@ -356,8 +356,9 @@ h2 {
 
   .article__article-items_content {
     padding: 0 3rem;
+    overflow-y: visible;
   }
-
+  
   .article__article-items-container:nth-child(1)
     .article__article-items_content {
     padding: 0 2rem;
