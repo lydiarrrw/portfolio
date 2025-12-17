@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 10px">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML, CSS, JavaScript, web developer, software engineer, frontend, front end">
+  <meta name="author" content="Lydia Wood">
+  <meta name="description" content="Lydia Wood - Blog - React2Shell: My First Up-Close Security Vulnerability">
+  <title>Lydia Wood - Blog - React2Shell: My First Up-Close Security Vulnerability</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../blog-styles.css">
+  <link rel="stylesheet" href="../icons.css">
+  <link rel="icon" href="../../assets/lydia-no-background.png" sizes="16x16" type="image/jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;700&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,800;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="../../index.html">
+      <p class="h1">Lydia Wood</p>
+      <p>MAKING AND BREAKING THINGS ONLINE</p>
+    </a>   
+    <a href="../blog_home.html">
+      <p class="h1 nav-blog_title">Blog</p>
+    </a>
+  </nav>
+  <main class="blog">
+    <section>
+      <a href="../blog_home.html" class="breadcrumb">< Back to blog</a>
+      <h1 class="blog_post-h1"><span class="blog_highlight">React2Shell: My First Up-Close Security Vulnerability</span></h1>
+    </section>
+    <p class="blog_post-text"><b>December 2025</b></p>
+    <section>
+      <p class="blog_post-text">
+        I had some very exciting news this week, at least for me, when I received an email from 
+        <a target="_blank" href="https://vercel.com/" class="external-link-text">Vercel</a> letting me 
+        know that there was a security flaw in certain versions of the framework. Probably not such exciting news for them!
+      </p>
+      <p class="blog_post-text">
+        The issue turned out to be a security vulnerability in some React components, tracked as 
+        CVE-2025-55182, also known as react2shell. (And then a few further issues in a separate email).
+      </p>
+      <p class="blog_post-text">
+        This vulnerability affects projects using certain versions of Next.js and React. 
+        Thankfully, a fix was released pretty quickly, but there was already a proof of concept available meaning 
+        attackers could potentially figure out how to exploit it if projects weren’t updated.
+      </p>
+
+      <h2><span class="blog_highlight">WHAT IS THE VULNERABILITY?</span></h2>
+      <p class="blog_post-text">
+        In simple terms, researchers discovered that if an attacker carefully crafts data in just the right way, 
+        they can trick the system into running any JavaScript code they want.
+      </p>
+      <p class="blog_post-text">
+        This happens because the framework didn’t properly check what type of data it was receiving. Instead of only 
+        allowing safe, expected types, it could be persuaded to reference internal types that were never meant to be exposed.
+      </p>
+      <p class="blog_post-text">
+        By chaining these types together, an attacker could eventually create a hidden (anonymous) function and then 
+        execute it, passing in malicious JavaScript. This chain can be disguised as a normal asynchronous process 
+        (using promises), which makes it harder to spot.
+      </p>
+      <p class="blog_post-text">
+        This kind of issue is commonly referred to as Remote Code Execution (RCE), one of the more serious 
+        categories of security vulnerabilities.
+      </p>
+      <h2><span class="blog_highlight">WHAT DID I DO?</span></h2>
+      <p class="blog_post-text">
+        The email linked to a page with clear instructions on what to do next, so the first thing I did was check my 
+        live sites that use Next.js and React.
+      </p>
+      <p class="blog_post-text">
+        I found one project running a vulnerable version. Then, a little later, I received another email pointing out 
+        additional issues so I had to update a more recent project too.
+      </p>
+      <p class="blog_post-text">
+        I followed the instructions on Vercel’s security bulletin:
+        <a target="_blank" href="https://vercel.com/kb/bulletin/react2shell" class="external-link-text">https://vercel.com/kb/bulletin/react2shell</a>
+      </p>
+      <p class="blog_post-text">
+        Using the command line, I ran:
+        <code>
+          npx fix-react2shell-next
+        </code>
+      </p>
+      <p class="blog_post-text">
+        After that, I added the changes, committed them, pushed everything up, and redeployed the projects.
+      </p>
+      <p class="blog_post-text">
+        While my hobby sites are unlikely to be the target of international cyber attacks, it still felt 
+        important to apply the fix. And for large organisations using Next.js at scale, this was obviously a much 
+        bigger and more urgent problem.
+      </p>
+      <p class="blog_post-text">
+        I also came across a really interesting Reddit thread where developers discuss how they’re handling this 
+        and similar vulnerabilities including detection, prevention, and staying ready to update quickly. You can
+        <a target="_blank" href="https://www.reddit.com/r/devsecops/comments/1pfzm6x/react2shell_cve202555182_how_are_you_wiring_this/" class="external-link-text">read it here</a>
+      </p>
+
+      <h2><span class="blog_highlight">A NEW ACRONYM FOR ME</span></h2>
+      <p class="blog_post-text">
+        One small but important thing I learned is that CVE stands for Common Vulnerabilities and Exposures.
+      </p>
+      <p class="blog_post-text">
+        CVE is a program that tracks and catalogues publicly disclosed cybersecurity vulnerabilities, 
+        making it easier for developers and organisations to talk about and respond to specific issues.
+      </p>
+      <p class="blog_post-text">
+        You can read more about it here:
+        <a target="_blank" href="https://www.cve.org/" class="external-link-text">https://www.cve.org/</a>
+      </p>
+
+      <h2><span class="blog_highlight">HOW TO PREVENT THESE VULNERABILITIES</span></h2>
+      <p class="blog_post-text">
+        This experience definitely reinforced a few basics for me:
+      </p>
+      <ul>
+        <li>Use strong type checking</li>
+        <li>Keep track of the versions of software I’m using</li>
+        <li>Update dependencies regularly instead of letting them drift too far behind</li>
+      </ul>
+      <p class="blog_post-text">
+        None of this guarantees safety, but it massively reduces risk.
+      </p>
+
+      <h2><span class="blog_highlight">THIS ALSO GOT ME THINKING...</span></h2>
+      <p class="blog_post-text">
+        I found it interesting that I was notified about this vulnerability by Vercel, where my projects are hosted. 
+        It raised an interesting question for me: when should vulnerabilities be disclosed publicly?
+      </p>
+      <p class="blog_post-text">
+        On one hand, publishing details could encourage exploitation. On the other hand, people need to know about 
+        vulnerabilities so they can fix them.
+      </p>
+      <p class="blog_post-text">
+        This reminded me of an episode of Darknet Diaries where a man discovered serious vulnerabilities in his new 
+        router, including the fact that it didn’t require a password. He responsibly reported the issue to the company, 
+        but they mostly ignored his concerns. Eventually, he made the information public so people could protect themselves.
+      </p>
+      <p class="blog_post-text">
+        Personally, I’d want to know if my devices or software had security flaws, especially if fixing them was as 
+        simple as changing a setting or applying an update.
+      </p>
+      <p class="blog_post-text">
+        You can find the episode here: 
+        <a target="_blank" href="https://darknetdiaries.com/transcript/5/" class="external-link-text">https://darknetdiaries.com/transcript/5/</a>
+      </p>
+
+      <h2><span class="blog_highlight">FINAL THOUGHTS</span></h2>
+      <p class="blog_post-text">
+        This whole experience has made me realise I shouldn’t ignore those GitHub Dependabot emails I get. 
+        I have it enabled on one of my projects that isn’t live, so I hadn’t paid much attention to the alerts before. 
+        They are probably actually quite interesting!
+      </p>
+      <p class="blog_post-text">
+        Now, instead of seeing them as noise, I can see them as an opportunity to learn more about vulnerabilities
+         and how they affect real projects.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

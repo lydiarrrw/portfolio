@@ -135,14 +135,20 @@ h2 {
 }
 
 .blog_post-text,
-ol {
+ol, ul {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 16px;
 }
 
-ol {
+ol, ul {
   padding-left: 3rem;
+}
+
+code {
+  background: rgb(235, 233, 233);
+  padding: 0.5rem;
+  border-radius: 7px;
 }
 
 @media (max-width: 768px) {
