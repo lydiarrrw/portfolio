@@ -358,7 +358,7 @@ h2 {
     padding: 0 3rem;
     overflow-y: visible;
   }
-  
+
   .article__article-items-container:nth-child(1)
     .article__article-items_content {
     padding: 0 2rem;
@@ -560,16 +560,6 @@ h2 {
   outline: 0;
 }
 
-@media (max-width: 768px) {
-  .button-56 {
-    padding: 23px 17px;
-  }
-
-  .homepage_blog .blog_card {
-    font-size: 16px;
-  }
-}
-
 /* Arrow */
 .article__article-items_content::after {
   content: "\2193";
@@ -600,4 +590,18 @@ h2 {
 
 .article__article-items_content::after {
   animation: bounce 1.5s infinite ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .button-56 {
+    padding: 23px 17px;
+  }
+
+  .homepage_blog .blog_card {
+    font-size: 16px;
+  }
+
+  .article__article-items_content::after {
+    display: none;
+  }
 }
