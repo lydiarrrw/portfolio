@@ -17,22 +17,21 @@ function addArticleListeners() {
     item.addEventListener("click", () => {
       const isActive = item.classList.contains("hover-effect");
 
+      if (isActive) return;
+
       removeHoverEffects();
+      item.classList.add("hover-effect");
 
-      // Only activate + scroll if not already open
-      if (!isActive) {
-        item.classList.add("hover-effect");
-        
-        // const yOffset = -80;
-        const y =
-          // item.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          item.getBoundingClientRect().top + window.pageYOffset;
+      // Scroll to top
+      // const yOffset = -80; // adjust if needed
+      const y =
+        // item.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        item.getBoundingClientRect().top + window.pageYOffset;
 
-        window.scrollTo({
-          top: y,
-          behavior: "smooth"
-        });
-      }
+      window.scrollTo({
+        top: y,
+        behavior: "smooth"
+      });
     });
   }
 
