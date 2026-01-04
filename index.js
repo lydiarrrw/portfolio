@@ -66,18 +66,18 @@ function displayItems(items) {
 
     projectHtml += `
       <div href="" class="projects__project">
-        <div class="project__description project__hover--hidden">
+        <div class="project__description">
           <h4>${item.title}</h4> 
         </div>
-        <p class="project__hover--show project__hover--description">${
+        <p class="project__description">${
           item.description
         }</p>
-        <div class="project__tags project__hover--hidden">
+        <div class="project__tags">
           ${tags
-            .map((tag) => `<div class="project__tag">${tag}</div>`)
+            .map((tag) => `<div class="project__tag project__tag-skill">${tag}</div>`)
             .join("")}
         </div>
-        <div class="project__hover--show project__see-more">
+        <div class="project project__see-more">
         ${
           showLinkGithub || showLinkLive
             ? `
